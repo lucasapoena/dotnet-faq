@@ -438,46 +438,249 @@ O uso de conversões explícitas é uma maneira de dizer ao compilador que você
 ---
 ### Qual a diferença entre parse e Convert?
 
+As operações de `Parse` e `Convert` são usadas para transformar tipos de dados, como converter uma string para um inteiro. No entanto, elas têm diferenças importantes no que diz respeito à sua utilização e comportamento.
+
+#### Parse
+
+O método `Parse` está disponível em tipos base, como `Int32`, `Double`, `DateTime`, etc. Ele é usado para converter uma string para o tipo correspondente. Por exemplo, `Int32.Parse("123")` irá converter a string `"123"` para o número inteiro `123`.
+
+- **Uso**: Você usa `Parse` quando está seguro de que a string representa um valor válido do tipo que você deseja converter. Por exemplo, você usaria `Int32.Parse` quando tivesse certeza de que a string contém um número inteiro válido.
+  
+- **Exceções**: Se a string não for válida para conversão, `Parse` lançará uma exceção, como `FormatException` ou `ArgumentNullException` se você passar uma string nula.
+  
+- **Variações**: Existem também métodos `TryParse`, que tentam fazer a conversão e retornam um booleano indicando sucesso ou falha, e não lançam exceções se a conversão falhar. Por exemplo, `Int32.TryParse`.
+
+#### Convert
+
+A classe `Convert` fornece um conjunto mais amplo de métodos estáticos para converter entre diferentes tipos de dados, não apenas de strings. Pode ser usado para converter de qualquer tipo base para outro tipo base, como de `bool` para `string`, `double` para `int`, etc.
+
+- **Uso**: Você usa `Convert` quando precisa de mais flexibilidade na conversão de tipos e quando pode estar lidando com valores `null`. Por exemplo, `Convert.ToInt32(null)` irá retornar `0`, enquanto `Int32.Parse(null)` lançaria uma exceção.
+  
+- **Exceções**: Assim como `Parse`, os métodos `Convert` também lançarão exceções se a conversão for impossível, mas lidam com `null` de forma mais graciosa.
+  
+- **Variações**: Não existem variações do tipo `TryConvert`. A classe `Convert` destina-se a ser uma solução mais geral e robusta para a conversão de tipos, fornecendo métodos para lidar com `DBNull` e outros casos especiais.
+
+#### Resumo
+
+Em resumo, a principal diferença entre `Parse` e `Convert` é o escopo de sua aplicabilidade e como eles tratam valores inválidos e `null`:
+
+- **Parse**
+  - Específico para conversões de string para um tipo.
+  - Não lida com `null` – lançará exceção.
+  - Tem uma versão `TryParse` para evitar exceções.
+
+- **Convert**
+  - Geral para qualquer tipo de conversão entre tipos base.
+  - Pode lidar com `null`, convertendo para o valor padrão do tipo de destino.
+  - Não possui uma versão `TryConvert`.
+
+Ao escolher entre `Parse` e `Convert`, considere se você está trabalhando apenas com strings, se pode receber valores `null`, e se deseja evitar exceções usando o padrão `TryParse`.
 ---
 ### O que são operadores aritméticos e quais temos no C#?
 
+Operadores aritméticos são símbolos que indicam operações matemáticas entre operandos. No C#, temos os seguintes operadores aritméticos:
+
+1. **Adição (`+`)**: Soma dois operandos.
+2. **Subtração (`-`)**: Subtrai o segundo operando do primeiro.
+3. **Multiplicação (`*`)**: Multiplica dois operandos.
+4. **Divisão (`/`)**: Divide o primeiro operando pelo segundo. Note que a divisão entre inteiros descarta a fração.
+5. **Módulo (`%`)**: Retorna o resto da divisão do primeiro operando pelo segundo.
+6. **Incremento (`++`)**: Aumenta o valor do operando em um.
+7. **Decremento (`--`)**: Diminui o valor do operando em um.
+
+Exemplo:
+```csharp
+int a = 5 + 3;  // Soma: a é 8
+int b = a - 2;  // Subtração: b é 6
+int c = b * 3;  // Multiplicação: c é 18
+int d = c / 4;  // Divisão: d é 4 (inteiros)
+int e = c % 4;  // Módulo: e é 2
+a++;            // Incremento: a é 9
+b--;            // Decremento: b é 5
+```
 ---
 ### O que são operadores de atribuição e quais temos no C#?
 
+Operadores de atribuição são usados para atribuir valores a variáveis. Em C#, os operadores de atribuição incluem:
+
+1. **Atribuição (`=`)**: Atribui o valor do lado direito ao operando do lado esquerdo.
+2. **Atribuição de adição (`+=`)**: Adiciona o valor do lado direito ao operando do lado esquerdo.
+3. **Atribuição de subtração (`-=`)**: Subtrai o valor do lado direito do operando do lado esquerdo.
+4. **Atribuição de multiplicação (`*=`)**: Multiplica o operando do lado esquerdo pelo valor do lado direito.
+5. **Atribuição de divisão (`/=`)**: Divide o operando do lado esquerdo pelo valor do lado direito.
+6. **Atribuição de módulo (`%=`)**: Aplica o módulo do operando do lado esquerdo pelo valor do lado direito.
+7. E assim por diante, para cada operador aritmético, há um correspondente operador de atribuição que combina a operação com a atribuição.
+
+Exemplo:
+```csharp
+int x = 10;
+x += 5; // Equivalente a x = x + 5
+```
 ---
 ### O que são operadores de comparação e quais temos no C#?
+
+Operadores de comparação são utilizados para comparar dois valores. No C#, os operadores de comparação incluem:
+
+1. **Igual a (`==`)**: Verifica se dois operandos são iguais.
+2. **Diferente de (`!=`)**: Verifica se dois operandos não são iguais.
+3. **Maior que (`>`)**: Verifica se o operando da esquerda é maior que o da direita.
+4. **Menor que (`<`)**: Verifica se o operando da esquerda é menor que o da direita.
+5. **Maior ou igual a (`>=`)**: Verifica se o operando da esquerda é maior ou igual ao da direita.
+6. **Menor ou igual a (`<=`)**: Verifica se o operando da esquerda é menor ou igual ao da direita.
+
+Exemplo:
+```csharp
+bool isEqual = (5 == 5); // isEqual é verdadeiro
+```
 
 ---
 ### O que são operadores lógicos e quais temos no C#?
 
+Operadores lógicos são usados para combinar expressões booleanas. No C#, os operadores lógicos são:
+
+1. **AND (`&&`)**: Retorna `true` se ambas as expressões booleanas forem verdadeiras.
+2. **OR (`||`)**: Retorna `true` se pelo menos uma das expressões booleanas for verdadeira.
+3. **NOT (`!`)**: Inverte o valor da expressão booleana, de `true` para `false` e vice-versa.
+
+Exemplo:
+```csharp
+bool result = (5 > 3) && (5 < 10); // result é verdade
+```
+
 ---
+
 ### Cite duas estruturas condicionais que temos no C#
+
+1. **if-else**
+   A estrutura `if-else` permite executar certos trechos de código com base em uma condição booleana. Se a condição for verdadeira (`true`), o bloco de código dentro do `if` é executado; se for falsa (`false`), o bloco de código dentro do `else` é executado (se houver um `else`).
+
+   ```csharp
+   if (condicao) {
+       // Bloco de código que é executado se a condição for verdadeira
+   } else {
+       // Bloco de código que é executado se a condição for falsa
+   }
+   ```
+
+2. **switch**
+   O `switch` é uma estrutura condicional que seleciona um bloco de código para ser executado com base no valor de uma variável ou expressão. É útil quando você tem várias condições que dependem do valor de uma única variável.
+
+   ```csharp
+   switch (variavel) {
+       case valor1:
+           // Bloco de código executado para valor1
+           break;
+       case valor2:
+           // Bloco de código executado para valor2
+           break;
+       default:
+           // Bloco de código executado se nenhum caso acima corresponder
+           break;
+   }
+   ```
 
 ---
 ### Cite duas estruturas de repetição que temos no C#
 
+1. **for**
+   O laço `for` é utilizado para executar um bloco de código repetidamente, um número específico de vezes, até que uma condição seja falsa. Ele é geralmente utilizado quando o número de iterações é conhecido.
+
+   ```csharp
+   for (int i = 0; i < 10; i++) {
+       // Bloco de código que será executado 10 vezes
+   }
+   ```
+
+2. **foreach**
+   O `foreach` é uma estrutura de repetição que itera sobre uma coleção ou array. É muito útil para percorrer cada elemento de uma coleção sem se preocupar com o gerenciamento de índices.
+
+   ```csharp
+   foreach (var item in colecao) {
+       // Bloco de código que executa uma vez para cada item na coleção
+   }
+   ```
+
 ---
 ### Qual a diferença entre while e do/while?
+
+O laço `while` avalia a condição no início de cada iteração. Se a condição for falsa desde o início, o bloco de código dentro do `while` não será executado nenhuma vez.
+
+```csharp
+while (condicao) {
+    // Bloco de código que é executado enquanto a condição for verdadeira
+}
+```
+
+Por outro lado, o laço `do/while` garante que o bloco de código seja executado pelo menos uma vez, pois a condição é avaliada após a execução do bloco de código.
+
+```csharp
+do {
+    // Bloco de código que é executado pelo menos uma vez
+} while (condicao);
+```
 
 ---
 ### O que são heap e stack?
 
+- **Stack**: É uma região de memória que armazena variáveis locais e informações de controle de fluxo (como registros de ativação de chamadas de função). As variáveis armazenadas na stack têm tempo de vida limitado ao escopo em que foram declaradas. A stack tem um comportamento LIFO (Last-In, First-Out), o que significa que os dados mais recentemente adicionados são os primeiros a ser removidos.
+
+- **Heap**: É uma região de memória usada para alocação dinâmica. Ao contrário da stack, a vida útil dos objetos na heap é controlada pelo coletor de lixo do .NET. Objetos na heap podem ser acessados de qualquer lugar do programa e têm um tempo de vida que não é limitado ao escopo em que foram criados.
+
 ---
 ### O que são tipos de valor e tipos de referência?
+
+- **Tipos de Valor**: São tipos que armazenam dados diretamente. Em C#, tipos primitivos como `int`, `double`, `bool`, bem como structs, são tipos de valor. Quando você atribui uma variável de tipo de valor a outra, é feita uma cópia dos dados.
+
+- **Tipos de Referência**: São tipos que armazenam uma referência para os dados, e não os próprios dados. Em C#, classes são tipos de referência, incluindo strings, arrays e outras estruturas de dados complexas. Quando você atribui uma variável de tipo de referência a outra, ambas passam a referenciar o mesmo objeto na memória; nenhuma cópia do objeto real
 
 ---
 ### Onde são armazenados os tipos de valor?
 
+Os tipos de valor em .NET são armazenados na stack. A stack é uma área de memória que é usada para armazenar variáveis locais e parâmetros passados para métodos. Isso acontece quando os tipos de valor são declarados dentro de um método ou como parte de uma estrutura de dados maior, como uma `struct` ou um array de tipos de valor. No entanto, se um tipo de valor é um campo de uma classe (que é um tipo de referência), então ele é armazenado na heap como parte do objeto a que pertence.
+
 ---
 ### Onde são armazenados os tipos de referência?
+
+Os tipos de referência são armazenados na heap. Isso inclui objetos de classes, strings, arrays e delegates. A heap é uma área de memória usada para alocação dinâmica, onde a vida útil dos objetos não é limitada ao escopo em que foram criados. Quando você cria um objeto, o espaço para esse objeto é alocado na heap e uma referência a esse objeto é retornada, que é então armazenada na stack ou como parte de outro objeto na heap, dependendo de onde a referência é declarada.
 
 ---
 ### O que são Structs?
 
+`Structs` em .NET são tipos de valor que são usados para encapsular pequenas quantidades de dados relacionados. Ao contrário das classes, que são tipos de referência, as structs são armazenadas na stack, o que pode oferecer vantagens de desempenho. Structs são úteis para representar conceitos leves como pontos de coordenadas (x, y), pares de valores (chave, valor), entre outros. Em C#, `System.Int32` (ou `int`) é um exemplo de uma `struct`.
+
+As `structs` têm as seguintes características:
+- Não suportam herança.
+- São mais eficientes em termos de memória para pequenas quantidades de dados.
+- São passadas por valor, o que significa que qualquer alteração feita a uma instância de uma struct em um método não afetará a instância original.
+
 ---
 ### O que são enumeradores?
+
+Em C#, os enumeradores (ou `enums`) são tipos de valor definidos pelo usuário que consistem em um conjunto de constantes nomeadas. Eles são usados para representar um grupo de constantes numéricas relacionadas de uma forma legível. Isso torna o código mais claro e fácil de manter.
+
+```csharp
+enum DiasDaSemana
+{
+    Domingo,
+    Segunda,
+    Terça,
+    Quarta,
+    Quinta,
+    Sexta,
+    Sábado
+}
+```
+
+Em um `enum`, cada membro tem um valor associado, geralmente um inteiro. Por padrão, o valor de cada membro é incrementado em um, começando com zero, mas você pode definir explicitamente os valores se necessário.
 
 ---
 ### O que é um GUID?
 
+GUID significa Globally Unique Identifier (Identificador Globalmente Único). É um número de 128 bits que pode ser gerado de forma a ser único em todo o espaço e tempo, usado para identificar entidades de forma única em sistemas de software. A probabilidade de gerar dois GUIDs idênticos é extremamente baixa. Em C#, a struct `System.Guid` é usada para criar, comparar e manipular GUIDs. Eles são comumente usados em bancos de dados, sistemas de registro, ou em qualquer lugar que um identificador único seja necessário. Aqui está um exemplo de como gerar um GUID em C#:
+
+```csharp
+Guid meuGuid = Guid.NewGuid();
+```
+
+O GUID gerado é composto por dígitos hexadecimais e geralmente é exibido em um formato de 5 grupos separados por hífens, embora possa ser apresentado de outras formas.
 ---
