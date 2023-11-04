@@ -16,14 +16,14 @@ As perguntas estão organizadas por tópicos para facilitar o acesso e o estudo:
 ### [Fundamentos e Conceitos Básicos](categorias/01_fundamentos_e_conceitos_basicos.md)
 Questões sobre os princípios fundamentais do .NET e os conceitos básicos de C#.
 
-- [x] [O C# é uma linguagem compilada, tipada e gerenciada, o que isto significa?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-c-é-uma-linguagem-compilada-tipada-e-gerenciada-o-que-isto-significa)
+- [x] [O C# é uma linguagem compilada, tipada e gerenciada, o que isto significa?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-c-é-uma-linguagem-compilada-tipada-e-gerenciada-o-que-isto-significa) (Estagiário)
 - [x] [O que diferencia uma linguagem compilada de uma interpretada?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-diferencia-uma-linguagem-compilada-de-uma-interpretada)
 - [x] [Explique como o C# funciona](categorias/01_fundamentos_e_conceitos_basicos.md/#explique-como-o-c-funciona)
 - [x] [O que é o CLR?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-o-clr)
-- [x] [O que é IL?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-il)
-- [x] [O que é um Framework?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-um-framework)
-- [x] [O que é o .NET?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-o-net)
-- [x] [O que é o .NET Standard?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-o-net-standard)
+- [x] [O que é IL?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-il) (Estagiário)
+- [x] [O que é um Framework?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-um-framework) (Estagiário)
+- [x] [O que é o .NET?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-o-net) (Estagiário)
+- [x] [O que é o .NET Standard?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-o-net-standard) (Estagiário)
 - [x] [Explique o que é versão semântica?](categorias/01_fundamentos_e_conceitos_basicos.md/#explique-o-que-é-versão-semântica)
 - [x] [O que significa LTS na versão do software?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-significa-lts-na-versão-do-software)
 - [x] [O que é um Runtime?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-um-runtime)
@@ -38,7 +38,7 @@ Detalhes sobre como projetos e soluções são estruturados em um ambiente .NET.
 - [x] [Qual nome do método principal de um Console App?](categorias/02_estrutura_de_projetos_e_solucoes.md/#qual-nome-do-método-principal-de-um-console-app)
 - [x] [Qual a finalidade da pasta Properties?](categorias/02_estrutura_de_projetos_e_solucoes.md/#qual-a-finalidade-da-pasta-properties)
 - [x] [Qual a finalidade das pastas Bin e Obj?](categorias/02_estrutura_de_projetos_e_solucoes.md/#qual-a-finalidade-das-pastas-bin-e-obj)
-- [x] [O que são Namespaces?](categorias/02_estrutura_de_projetos_e_solucoes.md/#o-que-são-namespaces)
+- [x] [O que são Namespaces?](categorias/02_estrutura_de_projetos_e_solucoes.md/#o-que-são-namespaces) (Estagiário)
 
 ### [Programação Básica em C#](categorias/03_programacao_basica_csharp.md)
 Perguntas que cobrem a sintaxe básica e as construções da linguagem C#.
@@ -48,7 +48,7 @@ Perguntas que cobrem a sintaxe básica e as construções da linguagem C#.
 - [x] [Qual a diferença entre uma variável e uma constante?](categorias/03_programacao_basica_csharp.md/#qual-a-diferença-entre-uma-variável-e-uma-constante)
 - [x] [Cite 3 nomes reservados que temos no C#](categorias/03_programacao_basica_csharp.md/#cite-3-nomes-reservados-que-temos-no-c)
 - [x] [Quais formas temos de comentar código em C#?](categorias/03_programacao_basica_csharp.md/#quais-formas-temos-de-comentar-código-em-c)
-- [x] [O que são tipos primitivos?](categorias/03_programacao_basica_csharp.md/#o-que-são-tipos-primitivos)
+- [x] [O que são tipos primitivos?](categorias/03_programacao_basica_csharp.md/#o-que-são-tipos-primitivos) (Estagiário)
 - [x] [Qual tipo base no .NET?](categorias/03_programacao_basica_csharp.md/#qual-tipo-base-no-net)
 - [x] [Dado um var de um número real, qual tipo seria o var?](categorias/03_programacao_basica_csharp.md/#dado-um-var-de-um-número-inteiro-qual-tipo-seria-o-var)
 - [x] [Dado um var de um número inteiro, qual tipo seria o var?](categorias/03_programacao_basica_csharp.md/#dado-um-var-de-um-número-real-qual-tipo-seria-o-var)
