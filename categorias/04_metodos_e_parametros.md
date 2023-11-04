@@ -4,7 +4,7 @@ Este documento explora a definição de métodos em C# e a passagem de parâmetr
 
 ## Perguntas e Respostas
 
-### :grey_question: Como definimos que um método não retorna valor algum?
+### 🤔 :grey_question: Como definimos que um método não retorna valor algum?
 
 Em C#, um método que não retorna valor algum é definido usando a palavra-chave `void`. Quando um método é declarado como `void`, ele não pode retornar nenhum valor usando a instrução `return`. Se tentar fazer isso, ocorrerá um erro de compilação. No entanto, o método ainda pode usar a instrução `return` por si só para sair prematuramente do método.
 
