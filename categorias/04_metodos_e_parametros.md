@@ -4,7 +4,7 @@ Este documento explora a definição de métodos em C# e a passagem de parâmetr
 
 ## Perguntas e Respostas
 
-### 🤔 :grey_question: Como definimos que um método não retorna valor algum?
+### Como definimos que um método não retorna valor algum?
 
 Em C#, um método que não retorna valor algum é definido usando a palavra-chave `void`. Quando um método é declarado como `void`, ele não pode retornar nenhum valor usando a instrução `return`. Se tentar fazer isso, ocorrerá um erro de compilação. No entanto, o método ainda pode usar a instrução `return` por si só para sair prematuramente do método.
 
@@ -19,7 +19,7 @@ public void ExibirMensagem()
 ```
 
 ---
-### :grey_question: Podemos ter métodos sem parâmetros no C#?
+### Podemos ter métodos sem parâmetros no C#?
 
 Sim, no C# é perfeitamente possível ter métodos que não requerem parâmetros. Estes são chamados de métodos sem parâmetros, e eles realizam ações sem a necessidade de informações adicionais externas.
 
@@ -35,7 +35,7 @@ public void Saudar()
 Neste exemplo, o método `Saudar()` pode ser chamado sem passar nenhum argumento.
 
 ---
-### :grey_question: Como tornamos um parâmetro opcional no C#?
+### Como tornamos um parâmetro opcional no C#?
 
 Em C#, você pode tornar um parâmetro opcional ao definir um valor padrão para ele na declaração do método. Quando um argumento correspondente a um parâmetro opcional não é fornecido, o valor padrão é usado. Parâmetros opcionais devem ser definidos após todos os parâmetros obrigatórios na lista de parâmetros do método.
 
