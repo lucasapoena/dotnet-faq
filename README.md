@@ -32,11 +32,11 @@ Questões sobre os princípios fundamentais do .NET e os conceitos básicos de C
 ### [Estrutura de Projetos e Soluções](categorias/02_estrutura_de_projetos_e_solucoes.md)
 Detalhes sobre como projetos e soluções são estruturados em um ambiente .NET.
 
-- [ ] [Cite 3 tipos de projetos que temos no .NET](categorias/02_estrutura_de_projetos_e_solucoes.md)
-- [ ] [Qual nome do método principal de um Console App?](categorias/02_estrutura_de_projetos_e_solucoes.md)
-- [ ] [Qual a finalidade da pasta Properties?](categorias/02_estrutura_de_projetos_e_solucoes.md)
-- [ ] [Qual a finalidade das pastas Bin e Obj?](categorias/02_estrutura_de_projetos_e_solucoes.md)
-- [ ] [O que são Namespaces?](categorias/02_estrutura_de_projetos_e_solucoes.md)
+- [x] [Cite 3 tipos de projetos que temos no .NET](categorias/02_estrutura_de_projetos_e_solucoes.md/#cite-3-tipos-de-projetos-que-temos-no-net)
+- [x] [Qual nome do método principal de um Console App?](categorias/02_estrutura_de_projetos_e_solucoes.md/#qual-nome-do-método-principal-de-um-console-app)
+- [x] [Qual a finalidade da pasta Properties?](categorias/02_estrutura_de_projetos_e_solucoes.md/#qual-a-finalidade-da-pasta-properties)
+- [x] [Qual a finalidade das pastas Bin e Obj?](categorias/02_estrutura_de_projetos_e_solucoes.md/#qual-a-finalidade-das-pastas-bin-e-obj)
+- [x] [O que são Namespaces?](categorias/02_estrutura_de_projetos_e_solucoes.md/#o-que-são-namespaces)
 
 ### [Programação Básica em C#](categorias/03_programacao_basica_csharp.md)
 Perguntas que cobrem a sintaxe básica e as construções da linguagem C#.
