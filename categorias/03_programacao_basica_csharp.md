@@ -69,7 +69,7 @@ Em resumo, a escolha entre usar uma variável ou uma constante depende da necess
 
 No C# (e na maioria das linguagens de programação), existem várias palavras-chave reservadas que servem como fundamentos da linguagem, e você não pode usá-las como identificadores (por exemplo, nomes de variáveis, classes, métodos, etc.) porque elas têm significados especiais para o compilador. Por exemplo:
 
-#### class
+#### `class`
 A palavra-chave `class` é usada para declarar uma classe, que é uma das principais construções de programação orientada a objetos no C#. Uma classe é como um blueprint para criar objetos, que encapsulam dados e comportamento. Quando você declara uma classe, você está criando um novo tipo de dado que pode ser instanciado como objetos.
 
 ```csharp
@@ -81,7 +81,7 @@ public class Carro {
 }
 ```
 
-#### interface
+#### `interface`
 A palavra-chave `interface` define uma interface em C#. Interfaces são contratos que definem um conjunto de métodos e propriedades que as classes ou estruturas que as implementam devem conter. Interfaces são importantes para criar código altamente modular e reutilizável e são uma parte central da programação orientada a objetos e do design de software.
 
 ```csharp
@@ -91,7 +91,7 @@ public interface IVeiculo {
 }
 ```
 
-#### void
+#### `void`
 A palavra-chave `void` é utilizada para especificar que um método não retorna um valor. Em C#, todo método pode retornar algum valor (como int, string, um objeto, etc.), mas quando um método não deve retornar nada, você usa o `void`.
 
 ```csharp
@@ -186,50 +186,202 @@ O papel de `System.Object` é fundamental na garantia de que todas as entidades 
 
 ---
 ### Dado um var de um número real, qual tipo seria o var?
+Quando você utiliza a palavra-chave `var` para declarar uma variável com um número real literal, o tipo atribuído depende da notação do número real fornecido.
+
+Por exemplo:
+
+```csharp
+var number = 1.0;
+```
+
+Neste caso, sem qualquer sufixo adicional, o tipo inferido seria `double`. 
+
+Outros tipos de números reais em .NET incluem `float` e `decimal`. Se você quiser que o número seja interpretado como um `float` ou um `decimal`, você deve usar os sufixos `f` ou `m`, respectivamente:
+
+```csharp
+var number = 1.0f; // Inferido como float
+var number = 1.0m; // Inferido como decimal
+```
+
+Portanto, ao usar `var`, o tipo será determinado automaticamente pelo compilador com base no literal fornecido, a menos que você especifique um sufixo que força o compilador a tratar o literal como um tipo específico de ponto flutuante.
+
 ---
 ### Dado um var de um número inteiro, qual tipo seria o var?
+Quando você utiliza a palavra-chave `var` para declarar uma variável, você está indicando ao compilador que ele deve inferir o tipo da variável com base no valor que é atribuído a ela no momento da declaração. Isso é conhecido como inferência de tipo local e é uma característica da linguagem C# que foi introduzida na versão 3.0.
+
+Se você declara uma variável com `var` e a inicializa com um número inteiro, como mostrado no exemplo abaixo:
+
+```csharp
+var numero = 10;
+```
+
+O compilador do C# irá inferir que o tipo da variável `numero` é `int`, que é o tipo padrão para números inteiros literais em C# sem um sufixo que indique outro tipo de inteiro (como `long`, `uint`, etc.).
+
+Aqui está como a inferência de tipo funciona nesse caso:
+
+1. O compilador vê o valor literal `10`, que se ajusta dentro do intervalo de um `int` (que em C# é um inteiro de 32 bits com sinal).
+2. Não há nenhum sufixo no literal que sugeriria que o valor deve ser tratado como um tipo diferente de inteiro (como `L` para `long` ou `U` para `unsigned int`).
+3. O compilador então infere que o tipo da variável `numero` é `int`.
+
+Isso significa que, após essa linha de código, você só pode usar a variável `numero` para armazenar valores que são compatíveis com o tipo `int`. Tentar atribuir um valor que não é compatível, como uma string ou um número decimal, resultará em um erro de compilação.
+
 ---
 ### Qual a diferença entre char e string?
+No contexto da plataforma .NET, `char` e `string` são tipos de dados que são usados para representar caracteres e sequências de caracteres, respectivamente. Aqui estão as diferenças principais entre eles:
+
+#### `char`
+
+- `char` representa um único caractere Unicode de 16 bits.
+- É um tipo de valor (`ValueType`) e, portanto, é armazenado na pilha.
+- `char` é uma abstração do .NET para o tipo de dados primitivo `System.Char`.
+- Pode conter qualquer valor Unicode de `\u0000` a `\uffff`.
+- Não é possível para um `char` ser `null`, mas ele pode ser o caractere nulo (`\0`).
+- É utilizado quando você está trabalhando com um único caractere, como em operações de controle de caracteres, conversões de dígitos para caracteres, etc.
+
+Exemplo de declaração e uso de `char`:
+
+```csharp
+char letra = 'A'; // representação de um único caractere
+```
+
+#### `string`
+
+- `string` representa uma sequência de caracteres Unicode de 16 bits.
+- É um tipo de referência (`ReferenceType`) e, portanto, é armazenado no heap, embora tenha algumas otimizações especiais em .NET como a interning de strings.
+- `string` é uma abstração do .NET para o tipo de dados primitivo `System.String`.
+- Pode ser composta de zero ou mais caracteres Unicode e pode ser considerada como um array de `char`.
+- Uma `string` pode ser `null` ou vazia (`""`), o que não é o mesmo que um `char` nulo.
+- É usada quando você está trabalhando com texto, como em manipulação de texto, armazenamento de dados textuais, entre outros.
+
+Exemplo de declaração e uso de `string`:
+
+```csharp
+string palavra = "Olá Mundo!"; // representação de uma sequência de caracteres
+```
+
+Em resumo, use `char` quando estiver lidando com um único caractere e `string` quando estiver trabalhando com textos compostos por múltiplos caracteres.
+
 ---
 ### Qual valor padrão do tipo char?
+O tipo `char` é um tipo de valor que representa um caractere Unicode de 16 bits. De acordo com a especificação da linguagem C#, o valor padrão para tipos de valor, como o `char`, é o zero-bit pattern, que resulta em `\0` para o tipo `char`.
+
+Portanto, o valor padrão do tipo `char` é o caractere Unicode `U+0000`, que é o "null character" ou "caractere nulo". Este não deve ser confundido com o valor `null` que é usado para tipos de referência, indicando a ausência de uma instância de objeto. O "null character" é um valor válido dentro do conjunto de caracteres Unicode, mas geralmente é usado em programação para indicar o fim de uma string em linguagens de programação de baixo nível como C e C++.
+
+Aqui está um exemplo de como isso pode ser representado em C#:
+
+```csharp
+char defaultChar = default(char); // defaultChar será '\0'
+```
+
+O `default(char)` irá produzir `\0`, que é o valor padrão para o tipo `char`.
+
 ---
 ### Qual a diferença entre var e object?
+
+A diferença entre `var` e `object` é fundamental para entender como a linguagem C# lida com tipos de dados.
+
+#### `object`
+
+- **Definição**: `object` é a classe base para todos os tipos de dados em .NET. Isso significa que qualquer tipo pode ser convertido implicitamente para `object`.
+- **Tipagem**: Ao declarar uma variável como `object`, você está utilizando tipagem estática e explícita. Você está dizendo explicitamente que a variável é do tipo `object`.
+- **Boxing e Unboxing**: Quando você atribui um tipo de valor (como um `int`, `bool`, etc.) a uma variável do tipo `object`, ocorre um processo chamado "boxing", onde o valor é encapsulado dentro de um objeto no heap. O inverso, "unboxing", extrai o valor de volta a um tipo de valor, e deve ser feito de maneira explícita.
+- **Performance**: Devido ao boxing e unboxing, usar `object` pode ter implicações na performance, principalmente se houver muitas conversões de tipos de valor para referência e vice-versa.
+- **Flexibilidade**: `object` pode ser usado para armazenar qualquer tipo de dado, o que o torna muito flexível, mas ao custo de segurança de tipo e performance.
+- **Exemplo de Uso**:
+  ```csharp
+  object obj = 10; // Boxing do valor 10.
+  int num = (int)obj; // Unboxing e conversão explícita de volta para int.
+  ```
+
+#### `var`
+
+- **Definição**: `var` é uma palavra-chave introduzida no C# 3.0 que permite a declaração implícita de tipo de variáveis. O compilador infere o tipo da variável pelo valor que lhe é atribuído no momento da sua inicialização.
+- **Tipagem**: Ao usar `var`, você está utilizando tipagem estática, mas implícita. O tipo da variável é determinado no tempo de compilação e não pode mudar depois disso, mas você não precisa especificar o tipo explicitamente.
+- **Performance**: Como o tipo de uma variável declarada com `var` é definido em tempo de compilação e não envolve boxing ou unboxing (a menos que atribua explicitamente a um tipo `object`), ela tem a mesma performance que uma variável tipada explicitamente.
+- **Legibilidade e Manutenção**: `var` pode tornar o código mais legível, especialmente quando lidando com tipos complexos, mas se usado excessivamente pode tornar o código menos claro em relação ao tipo de dados que a variável representa.
+- **Exemplo de Uso**:
+  ```csharp
+  var num = 10; // O compilador inferirá que num é do tipo int.
+  ```
+  
+#### Considerações Importantes
+
+- `var` só pode ser usado quando uma variável é inicializada. Você não pode declarar uma variável `var` sem inicializá-la.
+- `var` não significa "variant" e não está relacionado com a tipagem dinâmica. Uma vez que o tipo é inferido, ele é fixo e o compilador tratará a variável como sendo daquele tipo específico.
+- `var` não é uma palavra-chave que indica "qualquer tipo"; ela simplesmente diz para o compilador "veja o que estou atribuindo a essa variável e inferir o tipo a partir disso".
+- O uso de `var` e `object` depende do contexto e da necessidade. Se precisar de uma variável que possa armazenar diferentes tipos de dados durante seu ciclo de vida, você precisará usar `dynamic` ou `object`. Se souber que o tipo de dados não vai mudar e quiser simplicidade e clareza, o `var` é a escolha adequada.
+
+Em resumo, `var` é sobre deixar o compilador decidir o tipo baseado na atribuição inicial, mantendo tipagem estática e performance otimizada. `object`, por outro lado, é sobre a flexibilidade de armazenar qualquer tipo de dados em uma variável, mas com possíveis implicações na performance devido ao boxing e unboxing.
+
 ---
 ### O que são tipos nulos?
+
+Tipos nulos são uma maneira de representar a ausência de valor para tipos de dados que normalmente requerem um valor. Tipos de valor, como `int`, `float`, `DateTime`, não podem ser nulos por padrão. Eles sempre devem conter um valor, o que significa que, se você declarar uma variável desse tipo e não inicializá-la, ela automaticamente terá um valor padrão (por exemplo, `0` para números inteiros, `false` para `bool`, etc.).
+
+No entanto, há situações em que é útil ter a capacidade de representar que uma variável não tem nenhum valor atribuído, como quando você está trabalhando com bancos de dados ou outras operações onde um valor pode ser desconhecido ou inaplicável. Para lidar com essas situações, .NET fornece os chamados tipos anuláveis ou nulos (nullable types).
+
+Um tipo anulável é criado usando o símbolo `?` após o tipo de valor. Por exemplo, `int?` é um tipo anulável de `int`. Isso significa que além dos valores normais de `int`, ele também pode conter `null`, o que indica a ausência de valor.
+
+Exemplo de declaração de um tipo anulável:
+
+```csharp
+int? numeroAnulavel = null;
+```
+
+Neste exemplo, `numeroAnulavel` é uma variável que pode conter qualquer valor `int` ou `null`.
+
 ---
 ### O que são alias? Cite 3 exemplos
+
 ---
 ### O que são conversões implícitas?
+
 ---
 ### O que são conversões explícitas?
+
 ---
 ### Qual a diferença entre parse e Convert?
+
 ---
 ### O que são operadores aritméticos e quais temos no C#?
+
 ---
 ### O que são operadores de atribuição e quais temos no C#?
+
 ---
 ### O que são operadores de comparação e quais temos no C#?
+
 ---
 ### O que são operadores lógicos e quais temos no C#?
+
 ---
 ### Cite duas estruturas condicionais que temos no C#
+
 ---
 ### Cite duas estruturas de repetição que temos no C#
+
 ---
 ### Qual a diferença entre while e do/while?
+
 ---
 ### O que são heap e stack?
+
 ---
 ### O que são tipos de valor e tipos de referência?
+
 ---
 ### Onde são armazenados os tipos de valor?
+
 ---
 ### Onde são armazenados os tipos de referência?
+
 ---
 ### O que são Structs?
+
 ---
 ### O que são enumeradores?
+
 ---
 ### O que é um GUID?
+
 ---
