@@ -683,4 +683,45 @@ Guid meuGuid = Guid.NewGuid();
 ```
 
 O GUID gerado é composto por dígitos hexadecimais e geralmente é exibido em um formato de 5 grupos separados por hífens, embora possa ser apresentado de outras formas.
+
+---
+### Qual a finalidade do Math.Round, Math.Celling e Math.Floor?
+`Math.Round`, `Math.Ceiling` e `Math.Floor` são métodos da classe `Math` no .NET que fornecem diferentes maneiras de realizar arredondamento e truncamento de valores numéricos decimais (`float`, `double`, ou `decimal`). Vou explicar a finalidade de cada um:
+
+#### `Math.Round`
+
+É usado para arredondar um número decimal para o número inteiro mais próximo. Por padrão, se o número estiver exatamente no meio (por exemplo, 2.5), ele será arredondado para o número par mais próximo (neste caso, 2). No entanto, é possível especificar outro comportamento de arredondamento usando um parâmetro de sobrecarga do método que aceita um `MidpointRounding`.
+
+Exemplo:
+
+```csharp
+double number1 = 2.5;
+double roundDefault = Math.Round(number1); // Retorna 2, arredondamento para o número par mais próximo (MidpointRounding.ToEven)
+double roundAwayFromZero = Math.Round(number1, MidpointRounding.AwayFromZero); // Retorna 3, arredondamento para longe de zero
+```
+
+#### `Math.Ceiling`
+
+É usado para arredondar um número para cima, ou seja, para o menor inteiro maior ou igual ao número decimal. Não importa a parte fracionária do número; ele sempre arredonda para cima.
+
+Exemplo:
+
+```csharp
+double number2 = 2.3;
+double ceil = Math.Ceiling(number2); // Retorna 3
+```
+
+#### `Math.Floor`
+
+É usado para arredondar um número para baixo, para o maior inteiro menor ou igual ao número decimal. Ele descarta a parte fracionária e retorna o inteiro imediatamente inferior.
+
+Exemplo:
+
+```csharp
+double number3 = 2.9;
+double floor = Math.Floor(number3); // Retorna 2
+```
+
+A escolha entre `Math.Round`, `Math.Ceiling` e `Math.Floor` depende do comportamento específico de arredondamento que você precisa para a sua situação particular. Se precisar de arredondamento padrão, use `Math.Round`; se sempre precisar arredondar para cima, use `Math.Ceiling`; e se precisar sempre arredondar para baixo, use `Math.Floor`.
+
 ---

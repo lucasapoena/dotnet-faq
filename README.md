@@ -74,6 +74,7 @@ Perguntas que cobrem a sintaxe básica e as construções da linguagem C#.
 - [x] [O que são Structs?](categorias/03_programacao_basica_csharp.md#o-que-são-structs)
 - [x] [O que são enumeradores?](categorias/03_programacao_basica_csharp.md#o-que-são-enumeradores)
 - [x] [O que é um GUID?](categorias/03_programacao_basica_csharp.md#o-que-é-um-guid)
+- [x] [Qual a finalidade do Math.Round, Math.Ceiling e Math.Floor?](categorias/03_programacao_basica_csharp.md#qual-a-finalidade-do-mathround-mathceiling-e-mathfloor)
 
 ### [Métodos e Parâmetros](categorias/04_metodos_e_parametros.md)
 Explicações sobre a definição e utilização de métodos e a passagem de parâmetros em C#.
@@ -107,19 +108,17 @@ Questões focadas na manipulação de strings e operações com texto no C#.
 ### [Data, Hora e Timezones](categorias/06_data_hora_e_timezones.md)
 Como lidar com datas, horas e fusos horários em aplicações .NET.
 
-- [ ] [O que é o DateTime?](categorias/06_data_hora_e_timezones.md#o-que-é-o-datetime)
-- [ ] [Como obtemos a data de hoje no C#?](categorias/06_data_hora_e_timezones.md#como-obtemos-a-data-de-hoje-no-c)
-- [ ] [Como convertemos uma data para String?](categorias/06_data_hora_e_timezones.md#como-convertemos-uma-data-para-string)
-- [ ] [Como comparamos duas datas em C#?](categorias/06_data_hora_e_timezones.md#como-comparamos-duas-datas-em-c)
-- [ ] [Como podemos obter o ano, mês ou dia no C#?](categorias/06_data_hora_e_timezones.md#como-podemos-obter-o-ano-mês-ou-dia-no-c)
-- [ ] [Como podemos obter o último dia do mês no C#?](categorias/06_data_hora_e_timezones.md#como-podemos-obter-o-último-dia-do-mês-no-c)
-- [ ] [Podemos criar datas nulas?](categorias/06_data_hora_e_timezones.md#podemos-criar-datas-nulas)
-- [ ] [O que são nullable types?](categorias/06_data_hora_e_timezones.md#o-que-são-nullable-types)
-- [ ] [O que é Timezone?](categorias/06_data_hora_e_timezones.md#o-que-é-timezone)
-- [ ] [Como obtermos a data sem um Timezone no C#?](categorias/06_data_hora_e_timezones.md#como-obtermos-a-data-sem-um-timezone-no-c)
-- [ ] [O que é DateTime Offset?](categorias/06_data_hora_e_timezones.md#o-que-é-datetime-offset)
-- [ ] [O que é um TimeSpan?](categorias/06_data_hora_e_timezones.md#o-que-é-um-timespan)
-- [ ] [Qual a finalidade do Math.Round, Math.Ceiling e Math.Floor?](categorias/06_data_hora_e_timezones.md#qual-a-finalidade-do-mathround-mathceiling-e-mathfloor)
+- [x] [O que é o DateTime?](categorias/06_data_hora_e_timezones.md#o-que-é-o-datetime)
+- [x] [Como obtemos a data de hoje no C#?](categorias/06_data_hora_e_timezones.md#como-obtemos-a-data-de-hoje-no-c)
+- [x] [Como convertemos uma data para String?](categorias/06_data_hora_e_timezones.md#como-convertemos-uma-data-para-string)
+- [x] [Como comparamos duas datas em C#?](categorias/06_data_hora_e_timezones.md#como-comparamos-duas-datas-em-c)
+- [x] [Como podemos obter o ano, mês ou dia no C#?](categorias/06_data_hora_e_timezones.md#como-podemos-obter-o-ano-mês-ou-dia-no-c)
+- [x] [Como podemos obter o último dia do mês no C#?](categorias/06_data_hora_e_timezones.md#como-podemos-obter-o-último-dia-do-mês-no-c)
+- [x] [Podemos criar datas nulas?](categorias/06_data_hora_e_timezones.md#podemos-criar-datas-nulas)
+- [x] [O que é Timezone?](categorias/06_data_hora_e_timezones.md#o-que-é-timezone)
+- [x] [Como obtermos a data sem um Timezone no C#?](categorias/06_data_hora_e_timezones.md#como-obtermos-a-data-sem-um-timezone-no-c)
+- [x] [O que é DateTime Offset?](categorias/06_data_hora_e_timezones.md#o-que-é-datetime-offset)
+- [x] [O que é um TimeSpan?](categorias/06_data_hora_e_timezones.md#o-que-é-um-timespan)
 
 ### [Coleções, Listas e Generics](categorias/07_colecoes_listas_e_generics.md)
 Exploração do uso de coleções, listas e tipos genéricos no C#.
