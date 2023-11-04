@@ -333,11 +333,107 @@ Neste exemplo, `numeroAnulavel` é uma variável que pode conter qualquer valor 
 ---
 ### O que são alias? Cite 3 exemplos
 
+"Aliases" podem se referir a diversos conceitos, mas o uso mais comum está associado com dois casos principais: 
+
+#### **Aliases de tipos**:
+São apelidos que você pode criar para tipos existentes. Isso pode ser útil quando você tem tipos com nomes muito longos ou quando você quer aumentar a legibilidade do código. No C#, você pode criar um alias de tipo usando a diretiva `using`.
+
+**Exemplo 1: Simplificando nomes longos**
+```csharp
+using ProjectAlias = MyVery.Long.Namespace.With.Many.Segments;
+```
+Neste caso, sempre que você precisar usar um tipo que esteja dentro do namespace `MyVery.Long.Namespace.With.Many.Segments`, você pode simplesmente usar `ProjectAlias` como um atalho.
+
+**Exemplo 2: Resolvendo conflitos de nomes**
+```csharp
+using StringBuilder = System.Text.StringBuilder;
+using MyStringBuilder = MyNamespace.CustomStringBuilder;
+```
+Aqui, se houver dois tipos chamados `StringBuilder` - um no namespace `System.Text` e outro em `MyNamespace`, você pode criar aliases para diferenciá-los.
+
+**Exemplo 3: Aumentando a legibilidade**
+```csharp
+using IntList = System.Collections.Generic.List<int>;
+```
+Neste exemplo, `IntList` é usado como um alias para `List<int>`, o que pode tornar o código mais legível quando você estiver trabalhando extensivamente com listas de inteiros.
+
+
+#### **Aliases de assembly**: 
+São usados para referenciar duas versões diferentes do mesmo assembly em um projeto. Isso é particularmente útil quando se quer usar tipos que são definidos em diferentes versões de um assembly, o que normalmente causaria um conflito de nome.
+
+Por exemplo, você pode ter duas versões da mesma biblioteca que são incompatíveis uma com a outra. No Visual Studio, você pode configurar isso nas propriedades da referência do assembly, onde você pode atribuir um nome de alias exclusivo para cada assembly referenciado.
+
+**Exemplo de como referenciar um assembly com um alias no código:**
+```csharp
+extern alias MyOldAssembly; // Define o alias para o assembly
+using MyOldClass = MyOldAssembly::Namespace.ClassName;
+```
+
+Para cada um desses casos, o uso de aliases pode simplificar o gerenciamento de tipos e assemblies, ajudando a evitar conflitos de nomes e tornando o código mais claro e mais fácil de manter.
+
 ---
 ### O que são conversões implícitas?
+São uma categoria de conversões de tipos que são realizadas automaticamente pelo compilador quando é necessário. Isso acontece sem a necessidade de sintaxe adicional ou operadores de conversão explícitos. A segurança dessas conversões é garantida pelo sistema de tipos do .NET, de modo que uma conversão implícita sempre mantém uma representação que é precisa e não leva a perda de dados.
+
+Na prática, isso significa que você pode atribuir um valor de um tipo mais restrito, ou "menor", para um tipo mais amplo, ou "maior", sem fazer nada especial. Um exemplo clássico seria atribuir um valor `int` a uma variável do tipo `long`. O tipo `int` (32 bits) é menor e pode ser convertido para `long` (64 bits) sem risco de perder informações.
+
+```csharp
+int myInt = 123456789;
+long myLong = myInt; // Conversão implícita de int para long
+```
+
+Aqui, `myInt` é convertido implicitamente para `long` ao ser atribuído a `myLong`.
+
+Outro exemplo seria a conversão de um tipo derivado para um tipo base.
+
+```csharp
+class Base {}
+class Derived : Base {}
+
+Derived myDerived = new Derived();
+Base myBase = myDerived; // Conversão implícita de Derived para Base
+```
+
+Neste caso, um objeto do tipo `Derived`, que herda de `Base`, é convertido implicitamente para o tipo `Base`.
+
+Conversões implícitas são convenientes e ajudam a tornar o código mais legível, evitando a necessidade de especificar conversões óbvias e seguras. Entretanto, é importante que os programadores entendam as regras de conversão de tipos para evitar suposições incorretas que possam levar a erros subtis.
+
+Além das conversões entre tipos numéricos e entre tipos por herança, o .NET também permite conversões implícitas para e de tipos `null`, e entre tipos de delegados que têm assinaturas compatíveis. Por exemplo, um valor `null` pode ser atribuído a qualquer tipo de referência ou tipo nullable sem uma conversão explícita.
+
+Vale ressaltar que as conversões implícitas contrastam com as conversões explícitas, onde é necessário um cast explícito ou um chamado a um método de conversão para realizar a conversão de tipos, especialmente quando há risco de perda de informação ou quando a conversão pode não ser segura, como por exemplo converter um `long` para um `int`.
 
 ---
 ### O que são conversões explícitas?
+
+Conversões explícitas, também conhecidas como casts, são um tipo de conversão de tipos em programação que não são realizadas automaticamente pelo sistema de tipos da linguagem. Na plataforma .NET, uma conversão explícita é necessária quando você deseja converter um tipo em outro e essa conversão não é segura, o que significa que há um potencial para perda de informação ou que ela pode causar uma exceção em tempo de execução.
+
+Em .NET, tipos de dados como inteiros, pontos flutuantes, e objetos podem frequentemente ser convertidos uns nos outros, mas a forma como você faz isso e quando é obrigado a ser explícito depende de se a conversão é segura ou não. Conversões seguras podem ser realizadas implicitamente porque o compilador pode garantir que não haverá perda de dados ou possibilidade de erro. Por exemplo, você pode atribuir um valor `int` a um `long` sem uma conversão explícita porque todos os valores `int` são válidos em um `long`.
+
+Por outro lado, se você tentar atribuir um valor `long` a um `int`, você deve usar uma conversão explícita, porque um `long` pode conter valores que estão fora do intervalo de um `int`. Aqui está um exemplo em C#:
+
+```csharp
+long longValue = 9223372036854775807; // Valor máximo para um long.
+int intValue;
+
+// Conversão explícita necessária aqui:
+intValue = (int)longValue; // Isso causará uma perda de informação.
+```
+
+Neste exemplo, a conversão de `long` para `int` é uma operação explícita e você precisa usar parênteses com o tipo para o qual você está convertendo (`(int)`). O compilador não permite essa conversão automaticamente porque pode haver perda de dados - neste caso específico, o valor de `longValue` é muito grande para caber em um `int`, então o resultado será truncado, podendo levar a um comportamento inesperado ou erro.
+
+As conversões explícitas também são comuns quando se trabalha com herança e interfaces. Se uma classe base é convertida para uma classe derivada, você precisa realizar uma conversão explícita, porque enquanto todo objeto da classe derivada é um objeto da classe base, nem todo objeto da classe base é um objeto da classe derivada. Por exemplo:
+
+```csharp
+object obj = "This is a string";
+string str;
+
+// Conversão explícita necessária aqui:
+str = (string)obj;
+```
+
+Neste caso, `obj` é do tipo `object`, que é o tipo base para todos os tipos em .NET. Para tratá-lo como uma `string`, uma conversão explícita é necessária. Se `obj` não contiver uma `string`, uma exceção será lançada em tempo de execução.
+
+O uso de conversões explícitas é uma maneira de dizer ao compilador que você, como desenvolvedor, entende os riscos envolvidos na conversão e assume a responsabilidade por quaisquer consequências.
 
 ---
 ### Qual a diferença entre parse e Convert?
