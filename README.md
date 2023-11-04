@@ -7,6 +7,56 @@ Este repositório contém uma coleção de perguntas e respostas voltadas para a
 
 As perguntas foram originadas de um artigo criado por [André Baltieri](https://balta.io), também conhecido como Balta, e podem ser acessadas no seguinte link: [Perguntas para entrevistas de C#](https://balta.io/blog/perguntas-entrevista-csharp).
 
+<table>
+  <tr>
+    <th>Nível</th>
+    <th>Conhecimentos Esperados</th>
+  </tr>
+  <tr>
+    <td>Estagiário</td>
+    <td>
+      <ul>
+        <li>Linguagem de Programação</li>
+      </ul>   
+    </td>
+  </tr>
+  <tr>
+    <td>Júnior</td>
+    <td>
+      <ul>
+        <li>Tópicos do Nível Estagiário</li>
+        <li>Saber um pouco sobre Orientação a Objeto (POO)</li>
+        <li>Saber pesquisar os problemas e se virar bem consultando Google/Amigos/etc</li>
+        <li>Conseguir fazer uma API com alguma ajuda caso necessário</li>
+      </ul>   
+    </td>
+  </tr>
+  <tr>
+    <td>Pleno</td>
+    <td>
+      <ul>
+        <li>Tópicos do Nível Júnior e demais</li>
+        <li>Saber muito bem sobre Orientação a Objeto (POO)</li>
+        <li>Conhecer um pouco sobre Arquitetura (MVC, estruturas de projeto)</li>
+        <li>Realizar entregas com tranquilidade</li>
+        <li>Conseguir criar APIs sem muito esforço</li>
+      </ul>   
+    </td>
+  </tr>
+  <tr>
+    <td>Senior</td>
+    <td>
+      <ul>
+        <li>Tópicos do Nível Pleno e demais</li>
+        <li>Possuir vivência no desenvolvimento de soluções</li>
+        <li>Conhecer bem sobre Arquitetura de Software</li>
+        <li>Se responsabilizar pelo direcionamento técnico do projeto</li>        
+        <li>Conseguir auxiliar os demais integrantes do time na parte técnica</li>        
+      </ul>   
+    </td>
+  </tr>
+</table>
+
 Para enriquecer e refinar as respostas a algumas das questões apresentadas, recorremos ao auxílio do ChatGPT-4. Sinta-se encorajado a aprimorar as respostas conforme necessário.
 
 ## Categorias
@@ -17,16 +67,16 @@ As perguntas estão organizadas por tópicos para facilitar o acesso e o estudo:
 Questões sobre os princípios fundamentais do .NET e os conceitos básicos de C#.
 
 - [x] [O C# é uma linguagem compilada, tipada e gerenciada, o que isto significa?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-c-é-uma-linguagem-compilada-tipada-e-gerenciada-o-que-isto-significa) (Estagiário)
-- [x] [O que diferencia uma linguagem compilada de uma interpretada?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-diferencia-uma-linguagem-compilada-de-uma-interpretada)
+- [x] [O que diferencia uma linguagem compilada de uma interpretada?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-diferencia-uma-linguagem-compilada-de-uma-interpretada) (Estagiário)
 - [x] [Explique como o C# funciona](categorias/01_fundamentos_e_conceitos_basicos.md/#explique-como-o-c-funciona)
-- [x] [O que é o CLR?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-o-clr)
+- [x] [O que é o CLR?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-o-clr) (Estagiário)
 - [x] [O que é IL?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-il) (Estagiário)
 - [x] [O que é um Framework?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-um-framework) (Estagiário)
 - [x] [O que é o .NET?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-o-net) (Estagiário)
 - [x] [O que é o .NET Standard?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-o-net-standard) (Estagiário)
 - [x] [Explique o que é versão semântica?](categorias/01_fundamentos_e_conceitos_basicos.md/#explique-o-que-é-versão-semântica)
 - [x] [O que significa LTS na versão do software?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-significa-lts-na-versão-do-software)
-- [x] [O que é um Runtime?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-um-runtime)
+- [x] [O que é um Runtime?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-um-runtime) (Estagiário)
 - [x] [O que é um SDK?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-um-sdk)
 - [x] [O que é um CLI?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-um-cli)
 - [x] [O que é uma Solution?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-uma-solution)
@@ -150,31 +200,32 @@ Exploração do uso de coleções, listas e tipos genéricos no C#.
 ### [Orientação a Objetos e Conceitos Avançados](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md)
 Questões aprofundadas sobre os paradigmas de Orientação a Objetos e conceitos avançados em C#.
 
-- [ ] [O que são Classes e Objetos?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#o-que-são-classes-e-objetos)
+- [ ] [O que são Classes e Objetos?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#o-que-são-classes-e-objetos) (Júnior)
 - [ ] [O que é uma instância?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#o-que-é-uma-instância)
 - [ ] [O que são Propriedades?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#o-que-são-propriedades)
 - [ ] [O que são Métodos construtores?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#o-que-são-métodos-construtores)
 - [ ] [O que é o Garbage Collector?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#o-que-é-o-garbage-collector)
 - [ ] [O que é Object Dispose?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#o-que-é-object-dispose)
-- [ ] [Defina os modificadores public, private e protected](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#defina-os-modificadores-public-private-e-protected)
+- [ ] [Defina os modificadores public, private e protected](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#defina-os-modificadores-public-private-e-protected) (Júnior)
 - [ ] [O que são objetos estáticos?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#o-que-são-objetos-estáticos)
-- [ ] [O que é Herança?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#o-que-é-herança)
+- [ ] [O que é Herança?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#o-que-é-herança) (Júnior)
 - [ ] [O que é Upcast e Downcast?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#o-que-é-upcast-e-downcast)
-- [ ] [O que são Interfaces?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#o-que-são-interfaces)
-- [ ] [O que são Classes abstratas?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#o-que-são-classes-abstratas)
-- [ ] [Qual a finalidade das Classes seladas?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#qual-a-finalidade-das-classes-seladas)
-- [ ] [O que é Sobrecarga de métodos?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#o-que-é-sobrecarga-de-métodos)
-- [ ] [O que é Sobrescrita de método?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#o-que-é-sobrescrita-de-método)
+- [ ] [O que são Interfaces?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#o-que-são-interfaces) (Júnior)
+- [ ] [O que são classes abstratas?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#o-que-são-classes-abstratas) (Júnior)
+- [ ] [Qual a finalidade das classes seladas (sealed class)?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#qual-a-finalidade-das-classes-seladas) (Júnior)
+- [ ] [O que é Sobrecarga de métodos?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#o-que-é-sobrecarga-de-métodos) (Júnior)
+- [ ] [O que é Sobrescrita de método?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#o-que-é-sobrescrita-de-método) (Júnior)
 - [ ] [Como podemos Comparar dois objetos no C#?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#como-podemos-comparar-dois-objetos-no-c)
 - [ ] [Qual a finalidade do Dispose?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#qual-a-finalidade-do-dispose)
-- [ ] [O que é Encapsulamento?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#o-que-é-encapsulamento)
-- [ ] [O que é Polimorfismo?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#o-que-é-polimorfismo)
+- [ ] [O que é Encapsulamento?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#o-que-é-encapsulamento) (Júnior)
+- [ ] [O que é Polimorfismo?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#o-que-é-polimorfismo) (Júnior)
 - [ ] [O que são Tipos complexos?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#o-que-são-tipos-complexos)
 - [ ] [O que são Delegates?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#o-que-são-delegates)
 - [ ] [O que são events?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#o-que-são-events)
 - [ ] [Qual a diferença entre Events e Delegates?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#qual-a-diferença-entre-events-e-delegates)
 - [ ] [O que são os generics?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#o-que-são-os-generics)
 - [ ] [Como restringimos um tipo genérico?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md#como-restringimos-um-tipo-genérico)
+- [ ] [O que são partial class?](categorias/08_orientacao_a_objetos_e_conceitos_avancados.md)
 
 
 ### [Tratamento de Erros e Exceções](categorias/09_tratamento_de_erros_e_excecoes.md)
