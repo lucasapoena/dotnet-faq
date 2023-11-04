@@ -1,0 +1,27 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "lucasapoena",
+      "name": "Lucas Apoena",
+      "avatar_url": "https://avatars.githubusercontent.com/u/135553?v=4",
+      "profile": "https://www.lucasapoena.eti.br/",
+      "contributions": [
+        "doc",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true,
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "projectName": "dotnet-faq",
+  "projectOwner": "lucasapoena"
+}

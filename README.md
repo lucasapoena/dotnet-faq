@@ -1,4 +1,7 @@
 # Repositório de Perguntas e Respostas sobre .NET
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Este repositório contém uma coleção de perguntas e respostas voltadas para a linguagem C# e a plataforma .NET. É um recurso útil para aqueles que estão se preparando para entrevistas de emprego, estudando para certificações ou simplesmente buscando aprimorar seus conhecimentos no .NET Framework, .NET Core e .NET 5/6.
 
@@ -55,3 +58,24 @@ Este projeto é distribuído sob a licença MIT. Veja o arquivo `LICENSE` para m
 ## Agradecimentos
 
 Um agradecimento especial ao [Balta](https://balta.io) por criar e compartilhar o artigo original que inspirou a criação deste repositório.
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.lucasapoena.eti.br/"><img src="https://avatars.githubusercontent.com/u/135553?v=4?s=100" width="100px;" alt="Lucas Apoena"/><br /><sub><b>Lucas Apoena</b></sub></a><br /><a href="https://github.com/lucasapoena/dotnet-faq/commits?author=lucasapoena" title="Documentation">📖</a> <a href="https://github.com/lucasapoena/dotnet-faq/commits?author=lucasapoena" title="Code">💻</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
