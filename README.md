@@ -47,20 +47,18 @@ Como interfaces são usadas para criar sistemas extensíveis e flexíveis em C#.
 ### [Comandos de Linha de Comando e Ferramentas de Desenvolvimento](categorias/12_comandos_de_linha_de_comando_e_ferramentas_de_desenvolvimento.md)
 Informações sobre ferramentas de desenvolvimento e comandos de linha de comando úteis no ecossistema .NET.
 
-## Contribuições
+## 🦸 Autor
 
-Contribuições para o repositório são bem-vindas. Se você gostaria de adicionar mais perguntas, respostas, ou melhorar as existentes, por favor, sinta-se à vontade para abrir um pull request.
+<sub><b>Lucas Apoena</b></sub></a> <a href="https://www.lucasapoena.eti.br/" title="Smile">🙂</a>
+<br />
 
-## Licença
+<p align="left">
+    <a href="https://www.linkedin.com/in/lucasapoena/"><img src="https://img.shields.io/badge/-lucasapoena-0077B5?style=flat&logo=Linkedin&logoColor=white"/></a>
+    <a href="https://medium.com/@lucasapoena"><img src="https://img.shields.io/badge/-@lucasapoena-%2312100E?style=flat&logo=medium&logoColor=white"/></a>
+    <a href="mailto:contato@lucasapoena.eti.br"><img src="https://img.shields.io/badge/-contato@lucasapoena.eti.br-D14836?style=flat&logo=Gmail&logoColor=white"/></a>
+</p>
 
-Este projeto é distribuído sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
-
-## Agradecimentos
-
-Um agradecimento especial ao [Balta](https://balta.io) por criar e compartilhar o artigo original que inspirou a criação deste repositório.
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+## Contribuições ✨
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -79,3 +77,20 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+Contribuições para o repositório são bem-vindas. Se você gostaria de adicionar mais perguntas, respostas, ou melhorar as existentes, por favor, sinta-se à vontade para abrir um pull request.
+
+### 💪 Como contribuir para o projeto
+
+1. Faça um **fork** do projeto.
+2. Crie uma nova branch com as suas alterações: `git checkout -b my-feature`
+3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My new feature"`
+4. Envie as suas alterações: `git push origin my-feature`
+
+## 📝 Licença
+
+Este projeto é distribuído sob a licença [MIT](LICENSE).
+
+## Agradecimentos
+
+Um agradecimento especial ao [Balta](https://balta.io) por criar e compartilhar o artigo original que inspirou a criação deste repositório.
