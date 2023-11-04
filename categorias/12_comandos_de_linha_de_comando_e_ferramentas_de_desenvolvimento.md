@@ -2,10 +2,15 @@
 
 Informações úteis sobre as ferramentas de linha de comando para desenvolvedores .NET.
 
-## Perguntas
+## Perguntas e Respostas
 
-- Qual comando para executar uma aplicação .NET?
-- Qual comando para compilar uma aplicação .NET?
-- Qual comando para publicar uma aplicação .NET?
-- O que significa Debug?
-- Como executamos uma aplicação .NET em modo Debug?
+### Qual comando para executar uma aplicação .NET?
+---
+### Qual comando para compilar uma aplicação .NET?
+---
+### Qual comando para publicar uma aplicação .NET?
+---
+### O que significa Debug?
+---
+### Como executamos uma aplicação .NET em modo Debug?
+---

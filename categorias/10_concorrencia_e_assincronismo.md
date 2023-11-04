@@ -2,8 +2,11 @@
 
 Perguntas e respostas sobre a programação concorrente e assíncrona em C#.
 
-## Perguntas
+## Perguntas e Respostas
 
-- O que são Tasks?
-- Para que serve async/await?
-- Qual a diferença entre Task.FromResult e o uso de await?
+### O que são Tasks?
+---
+### Para que serve async/await?
+---
+### Qual a diferença entre Task.FromResult e o uso de await?
+---

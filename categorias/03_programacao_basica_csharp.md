@@ -2,7 +2,7 @@
 
 Aqui estão compiladas perguntas e respostas que cobrem a sintaxe básica e as construções fundamentais de C#.
 
-## Perguntas
+## Perguntas e Respostas
 
 ### Quais partes compõe um programa em C#?
 ---

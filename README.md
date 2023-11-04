@@ -76,9 +76,10 @@ Perguntas que cobrem a sintaxe básica e as construções da linguagem C#.
 ### [Métodos e Parâmetros](categorias/04_metodos_e_parametros.md)
 Explicações sobre a definição e utilização de métodos e a passagem de parâmetros em C#.
 
-- [ ] [Como definimos que um método não retorna valor algum?](categorias/04_metodos_e_parametros.md)
-- [ ] [Podemos ter métodos sem parâmetros no C#?](categorias/04_metodos_e_parametros.md)
-- [ ] [Como tornamos um parâmetro opcional no C#?](categorias/04_metodos_e_parametros.md)
+- [ ] [Como definimos que um método não retorna valor algum?](categorias/04_metodos_e_parametros.md#como-definimos-que-um-método-não-retorna-valor-algum)
+- [ ] [Podemos ter métodos sem parâmetros no C#?](categorias/04_metodos_e_parametros.md#podemos-ter-métodos-sem-parâmetros-no-c)
+- [ ] [Como tornamos um parâmetro opcional no C#?](categorias/04_metodos_e_parametros.md#como-tornamos-um-parâmetro-opcional-no-c)
+
 
 ### [Strings e Manipulação de Texto](categorias/05_strings_e_manipulacao_de_texto.md)
 Questões focadas na manipulação de strings e operações com texto no C#.
