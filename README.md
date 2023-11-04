@@ -7,6 +7,8 @@ Este repositório contém uma coleção de perguntas e respostas voltadas para a
 
 As perguntas foram originadas de um artigo criado por [André Baltieri](https://balta.io), também conhecido como Balta, e podem ser acessadas no seguinte link: [Perguntas para entrevistas de C#](https://balta.io/blog/perguntas-entrevista-csharp).
 
+Para enriquecer e refinar as respostas a algumas das questões apresentadas, recorremos ao auxílio do ChatGPT-4. Sinta-se encorajado a aprimorar as respostas conforme necessário.
+
 ## Categorias
 
 As perguntas estão organizadas por tópicos para facilitar o acesso e o estudo:
@@ -41,12 +43,12 @@ Detalhes sobre como projetos e soluções são estruturados em um ambiente .NET.
 ### [Programação Básica em C#](categorias/03_programacao_basica_csharp.md)
 Perguntas que cobrem a sintaxe básica e as construções da linguagem C#.
 
-- [ ] [Quais partes compõe um programa em C#?](categorias/03_programacao_basica_csharp.md/#quais-partes-compõe-um-programa-em-c)
-- [ ] [Qual a finalidade do Using?](categorias/03_programacao_basica_csharp.md/#qual-a-finalidade-do-using)
-- [ ] [Qual a diferença entre uma variável e uma constante?](categorias/03_programacao_basica_csharp.md/#qual-a-diferença-entre-uma-variável-e-uma-constante)
-- [ ] [Cite 3 nomes reservados que temos no C#](categorias/03_programacao_basica_csharp.md/#cite-3-nomes-reservados-que-temos-no-c)
-- [ ] [Quais formas temos de comentar código em C#?](categorias/03_programacao_basica_csharp.md/#quais-formas-temos-de-comentar-código-em-c)
-- [ ] [O que são tipos primitivos?](categorias/03_programacao_basica_csharp.md/#o-que-são-tipos-primitivos)
+- [x] [Quais partes compõe um programa em C#?](categorias/03_programacao_basica_csharp.md/#quais-partes-compõe-um-programa-em-c)
+- [x] [Qual a finalidade do Using?](categorias/03_programacao_basica_csharp.md/#qual-a-finalidade-do-using)
+- [x] [Qual a diferença entre uma variável e uma constante?](categorias/03_programacao_basica_csharp.md/#qual-a-diferença-entre-uma-variável-e-uma-constante)
+- [x] [Cite 3 nomes reservados que temos no C#](categorias/03_programacao_basica_csharp.md/#cite-3-nomes-reservados-que-temos-no-c)
+- [x] [Quais formas temos de comentar código em C#?](categorias/03_programacao_basica_csharp.md/#quais-formas-temos-de-comentar-código-em-c)
+- [x] [O que são tipos primitivos?](categorias/03_programacao_basica_csharp.md/#o-que-são-tipos-primitivos)
 - [ ] [Qual tipo base no .NET?](categorias/03_programacao_basica_csharp.md/#qual-tipo-base-no-net)
 - [ ] [Dado um var de um número real, qual tipo seria o var?](categorias/03_programacao_basica_csharp.md/#dado-um-var-de-um-número-inteiro-qual-tipo-seria-o-var)
 - [ ] [Dado um var de um número inteiro, qual tipo seria o var?](categorias/03_programacao_basica_csharp.md/#dado-um-var-de-um-número-real-qual-tipo-seria-o-var)
