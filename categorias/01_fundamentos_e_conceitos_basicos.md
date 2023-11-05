@@ -4,7 +4,9 @@ Este documento abrange perguntas e respostas sobre os fundamentos e conceitos b�
 
 ## Perguntas e Respostas
 
-### O C# é uma linguagem compilada, tipada e gerenciada, o que isto significa?
+### O C# é uma linguagem compilada, tipada e gerenciada, o que isto significa? (Estagiário)
+> Nível: Estagiário
+> Justificativa: Compreender os conceitos básicos de uma linguagem de programação faz parte do conhecimento inicial para quem está começando na área.
 
 - **Compilada**: O código escrito em C# não é executado diretamente pela máquina. Em vez disso, ele é traduzido para uma forma intermediária pelo compilador e, em seguida, executado por um ambiente de execução, o CLR (Common Language Runtime). Esta abordagem permite que o código seja otimizado para execução mais rápida após a compilação.
 
@@ -14,7 +16,7 @@ Este documento abrange perguntas e respostas sobre os fundamentos e conceitos b�
 
 ---
 
-### O que diferencia uma linguagem compilada de uma interpretada?
+### O que diferencia uma linguagem compilada de uma interpretada? (Estagiário)
 
 **Linguagem Compilada:**
 Quando um programa é escrito em uma linguagem compilada, ele passa por um processo de compilação que transforma o código fonte em código de máquina, que é específico para um determinado sistema ou arquitetura. Esse código de máquina é executado diretamente pelo hardware do computador. Exemplos de linguagens compiladas incluem C, C++ e Fortran.

@@ -68,7 +68,7 @@ Questões sobre os princípios fundamentais do .NET e os conceitos básicos de C
 
 - [x] [O C# é uma linguagem compilada, tipada e gerenciada, o que isto significa?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-c-é-uma-linguagem-compilada-tipada-e-gerenciada-o-que-isto-significa) (Estagiário)
 - [x] [O que diferencia uma linguagem compilada de uma interpretada?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-diferencia-uma-linguagem-compilada-de-uma-interpretada) (Estagiário)
-- [x] [Explique como o C# funciona](categorias/01_fundamentos_e_conceitos_basicos.md/#explique-como-o-c-funciona)
+- [x] [Explique como o C# funciona](categorias/01_fundamentos_e_conceitos_basicos.md/#explique-como-o-c-funciona) (Júnior)
 - [x] [O que é o CLR?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-o-clr) (Estagiário)
 - [x] [O que é IL?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-il) (Estagiário)
 - [x] [O que é um Framework?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-um-framework) (Estagiário)
