@@ -66,65 +66,126 @@ As perguntas estão organizadas por tópicos para facilitar o acesso e o estudo:
 ### [Fundamentos e Conceitos Básicos](categorias/01_fundamentos_e_conceitos_basicos.md)
 Questões sobre os princípios fundamentais do .NET e os conceitos básicos de C#.
 
-- [x] [O C# é uma linguagem compilada, tipada e gerenciada, o que isto significa?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-c-é-uma-linguagem-compilada-tipada-e-gerenciada-o-que-isto-significa) (Estagiário)
-- [x] [O que diferencia uma linguagem compilada de uma interpretada?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-diferencia-uma-linguagem-compilada-de-uma-interpretada) (Estagiário)
-- [x] [Explique como o C# funciona](categorias/01_fundamentos_e_conceitos_basicos.md/#explique-como-o-c-funciona) (Júnior)
-- [x] [O que é o CLR?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-o-clr) (Estagiário)
-- [x] [O que é IL?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-il) (Estagiário)
-- [x] [O que é um Framework?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-um-framework) (Estagiário)
-- [x] [O que é o .NET?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-o-net) (Estagiário)
-- [x] [O que é o .NET Standard?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-o-net-standard) (Estagiário)
-- [x] [Explique o que é versão semântica?](categorias/01_fundamentos_e_conceitos_basicos.md/#explique-o-que-é-versão-semântica)
-- [x] [O que significa LTS na versão do software?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-significa-lts-na-versão-do-software)
-- [x] [O que é um Runtime?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-um-runtime) (Estagiário)
-- [x] [O que é um SDK?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-um-sdk)
-- [x] [O que é um CLI?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-um-cli)
-- [x] [O que é uma Solution?](categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-uma-solution)
+<table>
+  <tr>
+    <th>Nível</th>
+    <th>Perguntas</th>
+  </tr>
+  <tr>
+    <td>Estagiário</td>
+    <td>
+      <ul>
+        <li><a href="categorias/01_fundamentos_e_conceitos_basicos.md/#o-c-é-uma-linguagem-compilada-tipada-e-gerenciada-o-que-isto-significa">O C# é uma linguagem compilada, tipada e gerenciada, o que isto significa?</a></li>
+        <li><a href="categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-diferencia-uma-linguagem-compilada-de-uma-interpretada">O que diferencia uma linguagem compilada de uma interpretada?</a></li>
+        <li><a href="categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-o-clr">O que é o CLR?</a></li>
+        <li><a href="categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-il">O que é IL?</a></li>
+        <li><a href="categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-um-framework">O que é um Framework?</a></li>
+        <li><a href="categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-o-net">O que é o .NET?</a></li>
+        <li><a href="categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-o-net-standard">O que é o .NET Standard?</a></li>
+        <li><a href="categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-significa-lts-na-versão-do-software">O que significa LTS na versão do software?</a></li>
+        <li><a href="categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-um-runtime">O que é um Runtime?</a></li>
+        <li><a href="categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-um-sdk">O que é um SDK?</a></li>
+        <li><a href="categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-um-cli">O que é um CLI?</a></li>
+        <li><a href="categorias/01_fundamentos_e_conceitos_basicos.md/#o-que-é-uma-solution">O que é uma Solution?</a></li>
+      </ul>   
+    </td>
+  </tr>
+  <tr>
+    <td>Júnior</td>
+    <td>
+      <ul>
+        <li><a href="categorias/01_fundamentos_e_conceitos_basicos.md/#explique-como-o-c-funciona">Explique como o C# funciona</a></li>
+        <li><a href="categorias/01_fundamentos_e_conceitos_basicos.md/#explique-o-que-é-versão-semântica">Explique o que é versão semântica?</a></li>
+      </ul>   
+    </td>
+  </tr>
+</table>
+
 
 ### [Estrutura de Projetos e Soluções](categorias/02_estrutura_de_projetos_e_solucoes.md)
 Detalhes sobre como projetos e soluções são estruturados em um ambiente .NET.
 
-- [x] [Cite 3 tipos de projetos que temos no .NET](categorias/02_estrutura_de_projetos_e_solucoes.md/#cite-3-tipos-de-projetos-que-temos-no-net)
-- [x] [Qual nome do método principal de um Console App?](categorias/02_estrutura_de_projetos_e_solucoes.md/#qual-nome-do-método-principal-de-um-console-app)
-- [x] [Qual a finalidade da pasta Properties?](categorias/02_estrutura_de_projetos_e_solucoes.md/#qual-a-finalidade-da-pasta-properties)
-- [x] [Qual a finalidade das pastas Bin e Obj?](categorias/02_estrutura_de_projetos_e_solucoes.md/#qual-a-finalidade-das-pastas-bin-e-obj)
-- [x] [O que são Namespaces?](categorias/02_estrutura_de_projetos_e_solucoes.md/#o-que-são-namespaces) (Estagiário)
+<table>
+  <tr>
+    <th>Nível</th>
+    <th>Perguntas</th>
+  </tr>
+  <tr>
+    <td>Estagiário</td>
+    <td>
+      <ul>
+        <li><a href="categorias/02_estrutura_de_projetos_e_solucoes.md/#cite-3-tipos-de-projetos-que-temos-no-net">Cite 3 tipos de projetos que temos no .NET</a></li>
+        <li><a href="categorias/02_estrutura_de_projetos_e_solucoes.md/#qual-nome-do-método-principal-de-um-console-app">Qual nome do método principal de um Console App?</a></li>
+        <li><a href="categorias/02_estrutura_de_projetos_e_solucoes.md/#o-que-são-namespaces">O que são Namespaces?</a></li>
+      </ul>   
+    </td>
+  </tr>
+  <tr>
+    <td>Júnior</td>
+    <td>
+      <ul>
+        <li><a href="categorias/02_estrutura_de_projetos_e_solucoes.md/#qual-a-finalidade-da-pasta-properties">Qual a finalidade da pasta Properties?</a></li>
+        <li><a href="categorias/02_estrutura_de_projetos_e_solucoes.md/#qual-a-finalidade-das-pastas-bin-e-obj">Qual a finalidade das pastas Bin e Obj?</a></li>
+      </ul>   
+    </td>
+  </tr>
+</table>
 
 ### [Programação Básica em C#](categorias/03_programacao_basica_csharp.md)
 Perguntas que cobrem a sintaxe básica e as construções da linguagem C#.
 
-- [x] [Quais partes compõe um programa em C#?](categorias/03_programacao_basica_csharp.md/#quais-partes-compõe-um-programa-em-c)
-- [x] [Qual a finalidade do Using?](categorias/03_programacao_basica_csharp.md/#qual-a-finalidade-do-using)
-- [x] [Qual a diferença entre uma variável e uma constante?](categorias/03_programacao_basica_csharp.md/#qual-a-diferença-entre-uma-variável-e-uma-constante)
-- [x] [Cite 3 nomes reservados que temos no C#](categorias/03_programacao_basica_csharp.md/#cite-3-nomes-reservados-que-temos-no-c)
-- [x] [Quais formas temos de comentar código em C#?](categorias/03_programacao_basica_csharp.md/#quais-formas-temos-de-comentar-código-em-c)
-- [x] [O que são tipos primitivos?](categorias/03_programacao_basica_csharp.md/#o-que-são-tipos-primitivos) (Estagiário)
-- [x] [Qual tipo base no .NET?](categorias/03_programacao_basica_csharp.md/#qual-tipo-base-no-net)
-- [x] [Dado um var de um número real, qual tipo seria o var?](categorias/03_programacao_basica_csharp.md/#dado-um-var-de-um-número-inteiro-qual-tipo-seria-o-var)
-- [x] [Dado um var de um número inteiro, qual tipo seria o var?](categorias/03_programacao_basica_csharp.md/#dado-um-var-de-um-número-real-qual-tipo-seria-o-var)
-- [x] [Qual a diferença entre char e string?](categorias/03_programacao_basica_csharp.md/#qual-a-diferença-entre-char-e-string)
-- [x] [Qual valor padrão do tipo char?](categorias/03_programacao_basica_csharp.md/#qual-valor-padrão-do-tipo-char)
-- [x] [Qual a diferença entre var e object?](categorias/03_programacao_basica_csharp.md/#qual-a-diferença-entre-var-e-object)
-- [x] [O que são tipos nulos?](categorias/03_programacao_basica_csharp.md/#o-que-são-tipos-nulos)
-- [x] [O que são alias? Cite 3 exemplos](categorias/03_programacao_basica_csharp.md/#o-que-são-alias-cite-3-exemplos)
-- [x] [O que são conversões implícitas?](categorias/03_programacao_basica_csharp.md#o-que-são-conversões-implícitas)
-- [x] [O que são conversões explícitas?](categorias/03_programacao_basica_csharp.md#o-que-são-conversões-explícitas)
-- [x] [Qual a diferença entre parse e Convert?](categorias/03_programacao_basica_csharp.md#qual-a-diferença-entre-parse-e-convert)
-- [x] [O que são operadores aritméticos e quais temos no C#?](categorias/03_programacao_basica_csharp.md#o-que-são-operadores-aritméticos-e-quais-temos-no-c)
-- [x] [O que são operadores de atribuição e quais temos no C#?](categorias/03_programacao_basica_csharp.md#o-que-são-operadores-de-atribuição-e-quais-temos-no-c)
-- [x] [O que são operadores de comparação e quais temos no C#?](categorias/03_programacao_basica_csharp.md#o-que-são-operadores-de-comparação-e-quais-temos-no-c)
-- [x] [O que são operadores lógicos e quais temos no C#?](categorias/03_programacao_basica_csharp.md#o-que-são-operadores-lógicos-e-quais-temos-no-c)
-- [x] [Cite duas estruturas condicionais que temos no C#](categorias/03_programacao_basica_csharp.md#cite-duas-estruturas-condicionais-que-temos-no-c)
-- [x] [Cite duas estruturas de repetição que temos no C#](categorias/03_programacao_basica_csharp.md#cite-duas-estruturas-de-repetição-que-temos-no-c)
-- [x] [Qual a diferença entre while e do/while?](categorias/03_programacao_basica_csharp.md#qual-a-diferença-entre-while-e-dowhile)
-- [x] [O que são heap e stack?](categorias/03_programacao_basica_csharp.md#o-que-são-heap-e-stack)
-- [x] [O que são tipos de valor e tipos de referência?](categorias/03_programacao_basica_csharp.md#o-que-são-tipos-de-valor-e-tipos-de-referência)
-- [x] [Onde são armazenados os tipos de valor?](categorias/03_programacao_basica_csharp.md#onde-são-armazenados-os-tipos-de-valor)
-- [x] [Onde são armazenados os tipos de referência?](categorias/03_programacao_basica_csharp.md#onde-são-armazenados-os-tipos-de-referência)
-- [x] [O que são Structs?](categorias/03_programacao_basica_csharp.md#o-que-são-structs)
-- [x] [O que são enumeradores?](categorias/03_programacao_basica_csharp.md#o-que-são-enumeradores)
-- [x] [O que é um GUID?](categorias/03_programacao_basica_csharp.md#o-que-é-um-guid)
-- [x] [Qual a finalidade do Math.Round, Math.Ceiling e Math.Floor?](categorias/03_programacao_basica_csharp.md#qual-a-finalidade-do-mathround-mathceiling-e-mathfloor)
+<table>
+  <tr>
+    <th>Nível</th>
+    <th>Perguntas</th>
+  </tr>
+  <tr>
+    <td>Estagiário</td>
+    <td>
+      <ul>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#quais-partes-compõe-um-programa-em-c">Quais partes compõe um programa em C#?</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#qual-a-diferença-entre-uma-variável-e-uma-constante">Qual a diferença entre uma variável e uma constante?</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#quais-formas-temos-de-comentar-código-em-c">Quais formas temos de comentar código em C#?</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#o-que-são-tipos-primitivos">O que são tipos primitivos?</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#qual-valor-padrão-do-tipo-char">Qual valor padrão do tipo char?</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#o-que-são-tipos-nulos">O que são tipos nulos?</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#o-que-são-conversões-implícitas">O que são conversões implícitas?</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#o-que-são-conversões-explícitas">O que são conversões explícitas?</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#o-que-são-operadores-aritméticos-e-quais-temos-no-c">O que são operadores aritméticos e quais temos no C#?</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#o-que-são-operadores-de-atribuição-e-quais-temos-no-c">O que são operadores de atribuição e quais temos no C#?</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#o-que-são-operadores-de-comparação-e-quais-temos-no-c">O que são operadores de comparação e quais temos no C#?</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#o-que-são-operadores-lógicos-e-quais-temos-no-c">O que são operadores lógicos e quais temos no C#?</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#cite-duas-estruturas-condicionais-que-temos-no-c">Cite duas estruturas condicionais que temos no C#</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#cite-duas-estruturas-de-repetição-que-temos-no-c">Cite duas estruturas de repetição que temos no C#</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#qual-a-finalidade-do-using">Qual a finalidade do Using?</a></li>
+      </ul>   
+    </td>
+  </tr>
+  <tr>
+    <td>Júnior</td>
+    <td>
+      <ul>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#cite-3-nomes-reservados-que-temos-no-c">Cite 3 nomes reservados que temos no C#</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#qual-tipo-base-no-net">Qual tipo base no .NET?</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#dado-um-var-de-um-número-inteiro-qual-tipo-seria-o-var">Dado um var de um número inteiro, qual tipo seria o var?</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#dado-um-var-de-um-número-real-qual-tipo-seria-o-var">Dado um var de um número real, qual tipo seria o var?</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#qual-a-diferença-entre-char-e-string">Qual a diferença entre char e string?</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#qual-a-diferença-entre-var-e-object">Qual a diferença entre var e object?</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#o-que-são-alias-cite-3-exemplos">O que são alias? Cite 3 exemplos</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#qual-a-diferença-entre-parse-e-convert">Qual a diferença entre parse e Convert?</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#qual-a-diferença-entre-while-e-dowhile">Qual a diferença entre while e do/while?</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#o-que-são-heap-e-stack">O que são heap e stack?</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#o-que-são-tipos-de-valor-e-tipos-de-referência">O que são tipos de valor e tipos de referência?</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#onde-são-armazenados-os-tipos-de-valor">Onde são armazenados os tipos de valor?</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#onde-são-armazenados-os-tipos-de-referência">Onde são armazenados os tipos de referência?</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#o-que-são-structs">O que são Structs?</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#o-que-são-enumeradores">O que são enumeradores?</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#o-que-é-um-guid">O que é um GUID?</a></li>
+        <li><a href="categorias/03_programacao_basica_csharp.md/#qual-a-finalidade-do-mathround-mathceiling-e-mathfloor">Qual a finalidade do Math.Round, Math.Ceiling e Math.Floor?</a></li>
+      </ul>   
+    </td>
+  </tr>
+</table>
 
 ### [Métodos e Parâmetros](categorias/04_metodos_e_parametros.md)
 Explicações sobre a definição e utilização de métodos e a passagem de parâmetros em C#.

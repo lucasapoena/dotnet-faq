@@ -5,6 +5,7 @@ Aqui estão compiladas perguntas e respostas que cobrem a sintaxe básica e as c
 ## Perguntas e Respostas
 
 ### Quais partes compõe um programa em C#?
+> **Nível:** Estagiário
 
 Um programa em C# é composto por:
 
@@ -16,8 +17,12 @@ Um programa em C# é composto por:
 - **Atributos**: Fornecem metadados adicionais sobre o código.
 - **Comentários**: Fornece descrições e anotações no código.
 
+
 ---
+
+
 ### Qual a finalidade do Using?
+> **Nível:** Júnior
 
 A diretiva `using` em C# tem duas finalidades principais:
 
@@ -38,8 +43,12 @@ Exemplo:
 using (var stream = new FileStream("file.txt", FileMode.Open)) { ... }
 ```
 
+
 ---
+
+
 ### Qual a diferença entre uma variável e uma constante?
+> **Nível:** Estagiário
 
 **Variável:**
 
@@ -64,7 +73,10 @@ using (var stream = new FileStream("file.txt", FileMode.Open)) { ... }
 
 Em resumo, a escolha entre usar uma variável ou uma constante depende da necessidade de alterar o valor após sua inicialização e do momento em que o valor é conhecido.
 
+
 ---
+
+
 ### Cite 3 nomes reservados que temos no C#
 
 No C# (e na maioria das linguagens de programação), existem várias palavras-chave reservadas que servem como fundamentos da linguagem, e você não pode usá-las como identificadores (por exemplo, nomes de variáveis, classes, métodos, etc.) porque elas têm significados especiais para o compilador. Por exemplo:
@@ -100,7 +112,10 @@ public void MostrarMensagem(string mensagem) {
 }
 ```
 
+
 ---
+
+
 ### Quais formas temos de comentar código em C#?
 
 1. **Comentários de linha única**: Utilizam duas barras inclinadas (`//`). Qualquer texto após `//` na mesma linha é tratado como comentário e, portanto, é ignorado pelo compilador. Por exemplo:
@@ -135,7 +150,10 @@ public int MinhaFuncao(int parametro)
 }
 ```
 
+
 ---
+
+
 ### O que são tipos primitivos?
 Os tipos primitivos em programação são os blocos de construção básicos dos dados, que representam os tipos mais simples e fundamentais de dados com os quais as linguagens de programação podem trabalhar. Eles são chamados de "primitivos" porque oferecem a forma mais básica de armazenamento de dados e são suportados diretamente pelo hardware do computador.
 
@@ -161,7 +179,10 @@ Os tipos primitivos são definidos no namespace `System` do .NET e, portanto, es
 
 Esses tipos possuem métodos e propriedades embutidos, apesar de serem considerados primitivos, pois no .NET, até mesmo os tipos primitivos são tratados como objetos. Por exemplo, o tipo `int` no .NET tem métodos como `ToString()`, `CompareTo()`, `Equals()`, entre outros, porque na realidade ele é um alias para a estrutura `System.Int32`, que herda de `System.ValueType` e, indiretamente, de `System.Object`.
 
+
 ---
+
+
 ### Qual tipo base no .NET?
 No .NET, o tipo base fundamental de todos os outros tipos é `System.Object`, frequentemente referido apenas como `object`. Este tipo reside no espaço de nomes `System`, que é o núcleo do .NET Framework Class Library (FCL). Todos os tipos em .NET, seja tipos de valor (value types) ou tipos de referência (reference types), derivam direta ou indiretamente de `System.Object`.
 
@@ -184,7 +205,10 @@ Aqui estão algumas das razões pelas quais `System.Object` é tão central para
 
 O papel de `System.Object` é fundamental na garantia de que todas as entidades no .NET tenham um mínimo de funcionalidade comum e possam ser tratadas de maneira uniforme em muitos cenários de programação. Isso facilita a criação de sistemas extensíveis e interoperáveis na plataforma .NET.
 
+
 ---
+
+
 ### Dado um var de um número real, qual tipo seria o var?
 Quando você utiliza a palavra-chave `var` para declarar uma variável com um número real literal, o tipo atribuído depende da notação do número real fornecido.
 
@@ -205,7 +229,10 @@ var number = 1.0m; // Inferido como decimal
 
 Portanto, ao usar `var`, o tipo será determinado automaticamente pelo compilador com base no literal fornecido, a menos que você especifique um sufixo que força o compilador a tratar o literal como um tipo específico de ponto flutuante.
 
+
 ---
+
+
 ### Dado um var de um número inteiro, qual tipo seria o var?
 Quando você utiliza a palavra-chave `var` para declarar uma variável, você está indicando ao compilador que ele deve inferir o tipo da variável com base no valor que é atribuído a ela no momento da declaração. Isso é conhecido como inferência de tipo local e é uma característica da linguagem C# que foi introduzida na versão 3.0.
 
@@ -225,7 +252,10 @@ Aqui está como a inferência de tipo funciona nesse caso:
 
 Isso significa que, após essa linha de código, você só pode usar a variável `numero` para armazenar valores que são compatíveis com o tipo `int`. Tentar atribuir um valor que não é compatível, como uma string ou um número decimal, resultará em um erro de compilação.
 
+
 ---
+
+
 ### Qual a diferença entre char e string?
 No contexto da plataforma .NET, `char` e `string` são tipos de dados que são usados para representar caracteres e sequências de caracteres, respectivamente. Aqui estão as diferenças principais entre eles:
 
@@ -261,7 +291,10 @@ string palavra = "Olá Mundo!"; // representação de uma sequência de caracter
 
 Em resumo, use `char` quando estiver lidando com um único caractere e `string` quando estiver trabalhando com textos compostos por múltiplos caracteres.
 
+
 ---
+
+
 ### Qual valor padrão do tipo char?
 O tipo `char` é um tipo de valor que representa um caractere Unicode de 16 bits. De acordo com a especificação da linguagem C#, o valor padrão para tipos de valor, como o `char`, é o zero-bit pattern, que resulta em `\0` para o tipo `char`.
 
@@ -275,7 +308,10 @@ char defaultChar = default(char); // defaultChar será '\0'
 
 O `default(char)` irá produzir `\0`, que é o valor padrão para o tipo `char`.
 
+
 ---
+
+
 ### Qual a diferença entre var e object?
 
 A diferença entre `var` e `object` é fundamental para entender como a linguagem C# lida com tipos de dados.
@@ -313,7 +349,10 @@ A diferença entre `var` e `object` é fundamental para entender como a linguage
 
 Em resumo, `var` é sobre deixar o compilador decidir o tipo baseado na atribuição inicial, mantendo tipagem estática e performance otimizada. `object`, por outro lado, é sobre a flexibilidade de armazenar qualquer tipo de dados em uma variável, mas com possíveis implicações na performance devido ao boxing e unboxing.
 
+
 ---
+
+
 ### O que são tipos nulos?
 
 Tipos nulos são uma maneira de representar a ausência de valor para tipos de dados que normalmente requerem um valor. Tipos de valor, como `int`, `float`, `DateTime`, não podem ser nulos por padrão. Eles sempre devem conter um valor, o que significa que, se você declarar uma variável desse tipo e não inicializá-la, ela automaticamente terá um valor padrão (por exemplo, `0` para números inteiros, `false` para `bool`, etc.).
@@ -330,7 +369,10 @@ int? numeroAnulavel = null;
 
 Neste exemplo, `numeroAnulavel` é uma variável que pode conter qualquer valor `int` ou `null`.
 
+
 ---
+
+
 ### O que são alias? Cite 3 exemplos
 
 "Aliases" podem se referir a diversos conceitos, mas o uso mais comum está associado com dois casos principais: 
@@ -371,7 +413,10 @@ using MyOldClass = MyOldAssembly::Namespace.ClassName;
 
 Para cada um desses casos, o uso de aliases pode simplificar o gerenciamento de tipos e assemblies, ajudando a evitar conflitos de nomes e tornando o código mais claro e mais fácil de manter.
 
+
 ---
+
+
 ### O que são conversões implícitas?
 São uma categoria de conversões de tipos que são realizadas automaticamente pelo compilador quando é necessário. Isso acontece sem a necessidade de sintaxe adicional ou operadores de conversão explícitos. A segurança dessas conversões é garantida pelo sistema de tipos do .NET, de modo que uma conversão implícita sempre mantém uma representação que é precisa e não leva a perda de dados.
 
@@ -402,7 +447,10 @@ Além das conversões entre tipos numéricos e entre tipos por herança, o .NET 
 
 Vale ressaltar que as conversões implícitas contrastam com as conversões explícitas, onde é necessário um cast explícito ou um chamado a um método de conversão para realizar a conversão de tipos, especialmente quando há risco de perda de informação ou quando a conversão pode não ser segura, como por exemplo converter um `long` para um `int`.
 
+
 ---
+
+
 ### O que são conversões explícitas?
 
 Conversões explícitas, também conhecidas como casts, são um tipo de conversão de tipos em programação que não são realizadas automaticamente pelo sistema de tipos da linguagem. Na plataforma .NET, uma conversão explícita é necessária quando você deseja converter um tipo em outro e essa conversão não é segura, o que significa que há um potencial para perda de informação ou que ela pode causar uma exceção em tempo de execução.
@@ -435,7 +483,10 @@ Neste caso, `obj` é do tipo `object`, que é o tipo base para todos os tipos em
 
 O uso de conversões explícitas é uma maneira de dizer ao compilador que você, como desenvolvedor, entende os riscos envolvidos na conversão e assume a responsabilidade por quaisquer consequências.
 
+
 ---
+
+
 ### Qual a diferença entre parse e Convert?
 
 As operações de `Parse` e `Convert` são usadas para transformar tipos de dados, como converter uma string para um inteiro. No entanto, elas têm diferenças importantes no que diz respeito à sua utilização e comportamento.
@@ -475,7 +526,8 @@ Em resumo, a principal diferença entre `Parse` e `Convert` é o escopo de sua a
   - Não possui uma versão `TryConvert`.
 
 Ao escolher entre `Parse` e `Convert`, considere se você está trabalhando apenas com strings, se pode receber valores `null`, e se deseja evitar exceções usando o padrão `TryParse`.
----
+
+
 ### O que são operadores aritméticos e quais temos no C#?
 
 Operadores aritméticos são símbolos que indicam operações matemáticas entre operandos. No C#, temos os seguintes operadores aritméticos:
@@ -498,7 +550,10 @@ int e = c % 4;  // Módulo: e é 2
 a++;            // Incremento: a é 9
 b--;            // Decremento: b é 5
 ```
+
 ---
+
+
 ### O que são operadores de atribuição e quais temos no C#?
 
 Operadores de atribuição são usados para atribuir valores a variáveis. Em C#, os operadores de atribuição incluem:
@@ -516,7 +571,11 @@ Exemplo:
 int x = 10;
 x += 5; // Equivalente a x = x + 5
 ```
+
+
 ---
+
+
 ### O que são operadores de comparação e quais temos no C#?
 
 Operadores de comparação são utilizados para comparar dois valores. No C#, os operadores de comparação incluem:
@@ -533,7 +592,10 @@ Exemplo:
 bool isEqual = (5 == 5); // isEqual é verdadeiro
 ```
 
+
 ---
+
+
 ### O que são operadores lógicos e quais temos no C#?
 
 Operadores lógicos são usados para combinar expressões booleanas. No C#, os operadores lógicos são:
@@ -547,7 +609,9 @@ Exemplo:
 bool result = (5 > 3) && (5 < 10); // result é verdade
 ```
 
+
 ---
+
 
 ### Cite duas estruturas condicionais que temos no C#
 
@@ -579,7 +643,11 @@ bool result = (5 > 3) && (5 < 10); // result é verdade
    }
    ```
 
+
+
 ---
+
+
 ### Cite duas estruturas de repetição que temos no C#
 
 1. **for**
@@ -600,7 +668,9 @@ bool result = (5 > 3) && (5 < 10); // result é verdade
    }
    ```
 
+
 ---
+
 ### Qual a diferença entre while e do/while?
 
 O laço `while` avalia a condição no início de cada iteração. Se a condição for falsa desde o início, o bloco de código dentro do `while` não será executado nenhuma vez.
@@ -619,31 +689,41 @@ do {
 } while (condicao);
 ```
 
+
 ---
+
 ### O que são heap e stack?
 
 - **Stack**: É uma região de memória que armazena variáveis locais e informações de controle de fluxo (como registros de ativação de chamadas de função). As variáveis armazenadas na stack têm tempo de vida limitado ao escopo em que foram declaradas. A stack tem um comportamento LIFO (Last-In, First-Out), o que significa que os dados mais recentemente adicionados são os primeiros a ser removidos.
 
 - **Heap**: É uma região de memória usada para alocação dinâmica. Ao contrário da stack, a vida útil dos objetos na heap é controlada pelo coletor de lixo do .NET. Objetos na heap podem ser acessados de qualquer lugar do programa e têm um tempo de vida que não é limitado ao escopo em que foram criados.
 
+
 ---
+
 ### O que são tipos de valor e tipos de referência?
 
 - **Tipos de Valor**: São tipos que armazenam dados diretamente. Em C#, tipos primitivos como `int`, `double`, `bool`, bem como structs, são tipos de valor. Quando você atribui uma variável de tipo de valor a outra, é feita uma cópia dos dados.
 
 - **Tipos de Referência**: São tipos que armazenam uma referência para os dados, e não os próprios dados. Em C#, classes são tipos de referência, incluindo strings, arrays e outras estruturas de dados complexas. Quando você atribui uma variável de tipo de referência a outra, ambas passam a referenciar o mesmo objeto na memória; nenhuma cópia do objeto real
 
+
 ---
+
 ### Onde são armazenados os tipos de valor?
 
 Os tipos de valor em .NET são armazenados na stack. A stack é uma área de memória que é usada para armazenar variáveis locais e parâmetros passados para métodos. Isso acontece quando os tipos de valor são declarados dentro de um método ou como parte de uma estrutura de dados maior, como uma `struct` ou um array de tipos de valor. No entanto, se um tipo de valor é um campo de uma classe (que é um tipo de referência), então ele é armazenado na heap como parte do objeto a que pertence.
 
+
 ---
+
 ### Onde são armazenados os tipos de referência?
 
 Os tipos de referência são armazenados na heap. Isso inclui objetos de classes, strings, arrays e delegates. A heap é uma área de memória usada para alocação dinâmica, onde a vida útil dos objetos não é limitada ao escopo em que foram criados. Quando você cria um objeto, o espaço para esse objeto é alocado na heap e uma referência a esse objeto é retornada, que é então armazenada na stack ou como parte de outro objeto na heap, dependendo de onde a referência é declarada.
 
+
 ---
+
 ### O que são Structs?
 
 `Structs` em .NET são tipos de valor que são usados para encapsular pequenas quantidades de dados relacionados. Ao contrário das classes, que são tipos de referência, as structs são armazenadas na stack, o que pode oferecer vantagens de desempenho. Structs são úteis para representar conceitos leves como pontos de coordenadas (x, y), pares de valores (chave, valor), entre outros. Em C#, `System.Int32` (ou `int`) é um exemplo de uma `struct`.
@@ -653,7 +733,9 @@ As `structs` têm as seguintes características:
 - São mais eficientes em termos de memória para pequenas quantidades de dados.
 - São passadas por valor, o que significa que qualquer alteração feita a uma instância de uma struct em um método não afetará a instância original.
 
+
 ---
+
 ### O que são enumeradores?
 
 Em C#, os enumeradores (ou `enums`) são tipos de valor definidos pelo usuário que consistem em um conjunto de constantes nomeadas. Eles são usados para representar um grupo de constantes numéricas relacionadas de uma forma legível. Isso torna o código mais claro e fácil de manter.
@@ -673,7 +755,9 @@ enum DiasDaSemana
 
 Em um `enum`, cada membro tem um valor associado, geralmente um inteiro. Por padrão, o valor de cada membro é incrementado em um, começando com zero, mas você pode definir explicitamente os valores se necessário.
 
+
 ---
+
 ### O que é um GUID?
 
 GUID significa Globally Unique Identifier (Identificador Globalmente Único). É um número de 128 bits que pode ser gerado de forma a ser único em todo o espaço e tempo, usado para identificar entidades de forma única em sistemas de software. A probabilidade de gerar dois GUIDs idênticos é extremamente baixa. Em C#, a struct `System.Guid` é usada para criar, comparar e manipular GUIDs. Eles são comumente usados em bancos de dados, sistemas de registro, ou em qualquer lugar que um identificador único seja necessário. Aqui está um exemplo de como gerar um GUID em C#:
@@ -684,7 +768,9 @@ Guid meuGuid = Guid.NewGuid();
 
 O GUID gerado é composto por dígitos hexadecimais e geralmente é exibido em um formato de 5 grupos separados por hífens, embora possa ser apresentado de outras formas.
 
+
 ---
+
 ### Qual a finalidade do Math.Round, Math.Celling e Math.Floor?
 `Math.Round`, `Math.Ceiling` e `Math.Floor` são métodos da classe `Math` no .NET que fornecem diferentes maneiras de realizar arredondamento e truncamento de valores numéricos decimais (`float`, `double`, ou `decimal`). Vou explicar a finalidade de cada um:
 
@@ -723,5 +809,6 @@ double floor = Math.Floor(number3); // Retorna 2
 ```
 
 A escolha entre `Math.Round`, `Math.Ceiling` e `Math.Floor` depende do comportamento específico de arredondamento que você precisa para a sua situação particular. Se precisar de arredondamento padrão, use `Math.Round`; se sempre precisar arredondar para cima, use `Math.Ceiling`; e se precisar sempre arredondar para baixo, use `Math.Floor`.
+
 
 ---
